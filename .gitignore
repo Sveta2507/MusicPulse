@@ -7,5 +7,6 @@ instance/*.db
 docs/
 *.log
 .env
+~$*.pptx
 
 
