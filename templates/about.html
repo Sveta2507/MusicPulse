@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Про проєкт — UA Music Pulse{% endblock %}
+{% block content %}
+<section class="about-hero shell">
+  <div class="eyebrow"><span></span> SEMANTIC WEB PROJECT</div>
+  <h1>Музика як <em>пов'язані дані</em></h1>
+  <p>«UA Music Pulse» показує, як із відкритого графа знань створити зрозумілий та практичний цифровий продукт.</p>
+</section>
+
+<section class="about-grid shell">
+  <article class="glass-card accent-card"><span class="card-number">01</span><h2>Мета</h2><p>Об'єднати відомості про сучасних українських виконавців і дати змогу швидко шукати, фільтрувати та досліджувати музичну сцену.</p></article>
+  <article class="glass-card"><span class="card-number">02</span><h2>Open Linked Data</h2><p>Дані отримуються SPARQL-запитом із Wikidata. Кожен виконавець має глобальний QID, а локальний RDF-ресурс пов'язано з ним через <code>owl:sameAs</code>.</p></article>
+  <article class="glass-card"><span class="card-number">03</span><h2>Надійність</h2><p>SQLite пришвидшує запити, а JSON-знімок забезпечує автономний запуск. Ручне оновлення не руйнує чинні дані, якщо мережа недоступна.</p></article>
+  <article class="glass-card"><span class="card-number">04</span><h2>Відкритий результат</h2><p>Каталог можна одержати як JSON API або завантажити у форматі RDF/Turtle для повторного використання іншими семантичними системами.</p></article>
+</section>
+
+<section class="architecture shell">
+  <div class="section-heading"><div><div class="eyebrow"><span></span> АРХІТЕКТУРА</div><h2>Чотири чіткі шари</h2></div></div>
+  <div class="layer-flow">
+    <div><b>01</b><strong>Інтерфейс</strong><span>HTML · CSS · JavaScript</span></div><i>→</i>
+    <div><b>02</b><strong>Застосунок</strong><span>Flask · REST API</span></div><i>→</i>
+    <div><b>03</b><strong>Доступ до даних</strong><span>Repository · SQLite</span></div><i>→</i>
+    <div><b>04</b><strong>Open Data</strong><span>SPARQL · Wikidata</span></div>
+  </div>
+</section>
+
+<section class="data-card shell">
+  <div><span class="data-icon">{ }</span><div><b>{{ stats.artists }} сутностей · {{ stats.genres }} жанрів</b><p>Джерело: Wikidata Query Service · ліцензія CC0 1.0</p></div></div>
+  <a class="button primary" href="{{ url_for('api.export_turtle_file') }}">Завантажити RDF/Turtle</a>
+</section>
+
+<section class="author-block shell">
+  <span>ІНДИВІДУАЛЬНИЙ ПРОЄКТ</span>
+  <h2>Денисенко Світлана</h2>
+  <p>ІПЗм-11 · «Сучасний музичний світ України»</p>
+</section>
+{% endblock %}
+

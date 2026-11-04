@@ -1,0 +1,4 @@
+{% extends "base.html" %}
+{% block title %}Сторінку не знайдено{% endblock %}
+{% block content %}<section class="not-found shell"><strong>404</strong><h1>Цей трек не знайдено</h1><p>Сторінка не існує або змінила адресу.</p><a class="button primary" href="{{ url_for('pages.index') }}">На головну</a></section>{% endblock %}
+

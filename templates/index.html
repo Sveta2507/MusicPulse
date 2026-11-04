@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}UA Music Pulse — сучасна музика України{% endblock %}
+
+{% block content %}
+<section class="hero shell">
+  <div class="hero-copy">
+    <div class="eyebrow"><span></span> OPEN LINKED DATA / UKRAINE</div>
+    <h1>Сучасний<br><em>музичний світ</em><br>України</h1>
+    <p>Відкривайте артистів, жанри й нові зв'язки української сцени через структуровані дані Wikidata.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="#catalog">Дослідити сцену <span>↓</span></a>
+      <button class="button ghost" id="refreshButton" type="button">Оновити дані</button>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="vinyl">
+      <div class="vinyl-ring r1"></div><div class="vinyl-ring r2"></div>
+      <div class="vinyl-label">UA<br><b>NOW</b></div>
+    </div>
+    <div class="wave wave-one"></div><div class="wave wave-two"></div>
+    <div class="floating-tag tag-one">ETHNO</div>
+    <div class="floating-tag tag-two">METAL</div>
+    <div class="floating-tag tag-three">NEW WAVE</div>
+  </div>
+</section>
+
+<section class="stats-strip" aria-label="Статистика набору даних">
+  <div class="shell stats-grid">
+    <article><strong>{{ stats.artists }}</strong><span>виконавців</span></article>
+    <article><strong>{{ stats.genres }}</strong><span>жанрів</span></article>
+    <article><strong>{{ stats.groups }}</strong><span>гуртів</span></article>
+    <article><strong>CC0</strong><span>ліцензія даних</span></article>
+  </div>
+</section>
+
+<section class="catalog shell" id="catalog">
+  <div class="section-heading">
+    <div><div class="eyebrow"><span></span> МУЗИЧНА МАПА</div><h2>Голоси нової України</h2></div>
+    <p>Кураторська вибірка різних поколінь і напрямів — від потужного металу до електрофолку та інді.</p>
+  </div>
+
+  <form class="filter-panel" id="filters" autocomplete="off">
+    <label class="search-box">
+      <span aria-hidden="true">⌕</span>
+      <input id="search" type="search" placeholder="Знайти виконавця або опис…" aria-label="Пошук">
+    </label>
+    <label><span class="sr-only">Жанр</span>
+      <select id="genre"><option value="">Усі жанри</option>{% for genre in genres %}<option>{{ genre }}</option>{% endfor %}</select>
+    </label>
+    <label><span class="sr-only">Тип виконавця</span>
+      <select id="type"><option value="">Усі виконавці</option><option value="group">Гурти</option><option value="person">Сольні артисти</option></select>
+    </label>
+    <label><span class="sr-only">Сортування</span>
+      <select id="sort"><option value="name">За назвою</option><option value="year_desc">Спочатку нові</option><option value="year_asc">Спочатку ранні</option></select>
+    </label>
+  </form>
+
+  <div class="result-line"><span id="resultCount">Завантаження…</span><span class="live-dot">● LIVE DATA</span></div>
+  <div class="artist-grid" id="artistGrid" aria-live="polite"></div>
+</section>
+
+<section class="insight shell">
+  <div class="insight-copy">
+    <div class="eyebrow"><span></span> DATA INSIGHT</div>
+    <h2>Жанри без кордонів</h2>
+    <p>Один виконавець може одночасно належати до кількох жанрів. У реляційній БД це зв'язок «багато-до-багатьох», а в RDF — окремі семантичні твердження.</p>
+    <a class="text-link" href="{{ url_for('pages.about') }}">Як працюють дані <span>→</span></a>
+  </div>
+  <div class="chart" id="genreChart" aria-label="Найпоширеніші жанри"></div>
+</section>
+{% endblock %}
+
+{% block dialogs %}
+<dialog id="artistDialog" class="artist-dialog">
+  <button class="dialog-close" type="button" aria-label="Закрити">×</button>
+  <div id="dialogContent"></div>
+</dialog>
+<div class="toast" id="toast" role="status"></div>
+{% endblock %}
+

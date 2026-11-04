@@ -1,0 +1,4939 @@
+{
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0 1.0",
+  "retrieved_at": "2026-11-02T19:58:49.742252+00:00",
+  "query": "PREFIX wd: <http://www.wikidata.org/entity/>\nPREFIX wdt: <http://www.wikidata.org/prop/direct/>\nPREFIX schema: <http://schema.org/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?item ?nameUk ?nameEn ?descriptionUk ?descriptionEn ?image\n       ?inception ?birthDate ?genre ?genreUk ?genreEn ?instance ?spotifyId ?youtubeId\nWHERE {\n  VALUES ?item { wd:Q88566537 wd:Q85638586 wd:Q46968169 wd:Q12071385 wd:Q80808767 wd:Q47494823 wd:Q53844985 wd:Q19341672 wd:Q114036382 wd:Q11692618 wd:Q12071457 wd:Q12071620 wd:Q12072067 wd:Q12072569 wd:Q12108755 wd:Q12110828 wd:Q12116768 wd:Q12132897 wd:Q124407067 wd:Q1261136 wd:Q1268319 wd:Q131520019 wd:Q13424654 wd:Q1373359 wd:Q1383157 wd:Q15214335 wd:Q15651243 wd:Q1588889 wd:Q1588954 wd:Q161725 wd:Q16283937 wd:Q1633903 wd:Q1637293 wd:Q164718 wd:Q16709765 wd:Q16721901 wd:Q16964934 wd:Q1706805 wd:Q1824889 wd:Q18605949 wd:Q18762242 wd:Q18808200 wd:Q1967987 wd:Q1968021 wd:Q1969606 wd:Q1972083 wd:Q1974048 wd:Q20069336 wd:Q2024748 wd:Q2061578 wd:Q2062788 wd:Q23072454 wd:Q2384025 wd:Q2388470 wd:Q2496997 wd:Q2514599 wd:Q25433330 wd:Q2671046 wd:Q285383 wd:Q28701972 wd:Q28835047 wd:Q29567211 wd:Q3391785 wd:Q35356 wd:Q35918 wd:Q3874816 wd:Q4042178 wd:Q4043761 wd:Q4045567 wd:Q4046032 wd:Q4047654 wd:Q4067129 wd:Q4096030 wd:Q4168632 wd:Q4230308 wd:Q4238140 wd:Q4314837 wd:Q4315474 wd:Q4328421 wd:Q4347710 wd:Q4351376 wd:Q4415071 wd:Q4468201 wd:Q48955194 wd:Q50364232 wd:Q55423986 wd:Q56878254 wd:Q59162746 wd:Q653863 wd:Q6748214 wd:Q727662 wd:Q732479 wd:Q7937975 wd:Q80175 wd:Q85987537 wd:Q955082 wd:Q964951 wd:Q4051116 wd:Q12072918 wd:Q336301 wd:Q4155339 wd:Q1008489 wd:Q59358454 wd:Q56364121 wd:Q107646300 wd:Q111127206 wd:Q114243348 wd:Q116733141 wd:Q11801469 wd:Q12080013 wd:Q12087281 wd:Q12124379 wd:Q12127853 wd:Q12131555 wd:Q12134613 wd:Q12161762 wd:Q12168970 wd:Q12171389 wd:Q125885 wd:Q1275963 wd:Q129119 wd:Q14627544 wd:Q15064790 wd:Q15081052 wd:Q156951 wd:Q1574590 wd:Q16054135 wd:Q16297491 wd:Q166661 wd:Q16698229 wd:Q16700680 wd:Q16739217 wd:Q17371772 wd:Q18058656 wd:Q1879459 wd:Q19694388 wd:Q1975227 wd:Q19917936 wd:Q20066240 wd:Q20631407 wd:Q209845 wd:Q209926 wd:Q209987 wd:Q21573827 wd:Q21600244 wd:Q21683191 wd:Q229065 wd:Q22979243 wd:Q2302686 wd:Q231988 wd:Q2329850 wd:Q2350283 wd:Q2359458 wd:Q23656293 wd:Q237081 wd:Q23715847 wd:Q2391534 wd:Q24008612 wd:Q2418536 wd:Q2504592 wd:Q25050824 wd:Q25442068 wd:Q2622781 wd:Q2662517 wd:Q2662849 wd:Q270089 wd:Q275875 wd:Q277168 wd:Q2781934 wd:Q28826885 wd:Q289212 wd:Q3056591 wd:Q3350429 wd:Q336143 wd:Q4098935 wd:Q4100623 wd:Q4112436 wd:Q41272 wd:Q4166662 wd:Q4174878 wd:Q4217574 wd:Q4222735 wd:Q4237277 wd:Q4253098 wd:Q4299108 wd:Q4379252 wd:Q438402 wd:Q4391645 wd:Q4397461 wd:Q4498294 wd:Q4525785 wd:Q4527981 wd:Q4536696 wd:Q455606 wd:Q458209 wd:Q47489230 wd:Q521717 wd:Q535444 wd:Q540915 wd:Q550858 wd:Q55108431 wd:Q56310176 wd:Q58851557 wd:Q6415231 wd:Q65209556 wd:Q6522077 wd:Q698094 wd:Q7701243 wd:Q82262 wd:Q85992998 wd:Q91313507 wd:Q9317341 wd:Q114527926 }\n  OPTIONAL { ?item rdfs:label ?nameUk. FILTER(LANG(?nameUk) = \"uk\") }\n  OPTIONAL { ?item rdfs:label ?nameEn. FILTER(LANG(?nameEn) = \"en\") }\n  OPTIONAL { ?item schema:description ?descriptionUk. FILTER(LANG(?descriptionUk) = \"uk\") }\n  OPTIONAL { ?item schema:description ?descriptionEn. FILTER(LANG(?descriptionEn) = \"en\") }\n  OPTIONAL { ?item wdt:P18 ?image }\n  OPTIONAL { ?item wdt:P571 ?inception }\n  OPTIONAL { ?item wdt:P569 ?birthDate }\n  OPTIONAL {\n    ?item wdt:P136 ?genre.\n    OPTIONAL { ?genre rdfs:label ?genreUk. FILTER(LANG(?genreUk) = \"uk\") }\n    OPTIONAL { ?genre rdfs:label ?genreEn. FILTER(LANG(?genreEn) = \"en\") }\n  }\n  OPTIONAL { ?item wdt:P31 ?instance }\n  OPTIONAL { ?item wdt:P1902 ?spotifyId }\n  OPTIONAL { ?item wdt:P2397 ?youtubeId }\n}\nORDER BY ?item ?genre",
+  "artists": [
+    {
+      "qid": "Q88566537",
+      "name_uk": "1914",
+      "name_en": "1914",
+      "description": "представник сучасної української музичної сцени",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q88566537",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:блек-дез-метал",
+          "name": "блек-дез-метал"
+        },
+        {
+          "id": "local:дум-метал",
+          "name": "дум-метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q85638586",
+      "name_uk": "Go_A",
+      "name_en": "Go_A",
+      "description": "український електрофольк-гурт",
+      "artist_type": "group",
+      "start_year": 2012,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Go%20A%20at%20the%20Vidbir%202020.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q85638586",
+      "spotify_url": "https://open.spotify.com/artist/4kvCU3MzggM2piZCqvxj0x",
+      "youtube_url": "https://www.youtube.com/channel/UCPkFbYejq7f8M7J1fIB1COA",
+      "genres": [
+        {
+          "id": "Q1435509",
+          "name": "фолктроніка"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q46968169",
+      "name_uk": "IGNEA",
+      "name_en": "IGNEA",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q46968169",
+      "spotify_url": "https://open.spotify.com/artist/7E7V95LId9MPJ6anIK1qrM",
+      "youtube_url": "https://www.youtube.com/channel/UCIVzbVm64h2LrkHpwq4nSOg",
+      "genres": [
+        {
+          "id": "local:мелодійний-дез-метал",
+          "name": "мелодійний дез-метал"
+        },
+        {
+          "id": "local:симфонічний-метал",
+          "name": "симфонічний метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12071385",
+      "name_uk": "Jinjer",
+      "name_en": "Jinjer",
+      "description": "Ukrainian musical group; metalcore band",
+      "artist_type": "group",
+      "start_year": 2009,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Jinjermain.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12071385",
+      "spotify_url": "https://open.spotify.com/artist/7o6cOczXTB8ioTAAJTbESf",
+      "youtube_url": "https://www.youtube.com/channel/UC4BSeEq7XNtihGqI309vhYg",
+      "genres": [
+        {
+          "id": "Q241662",
+          "name": "грув-метал"
+        },
+        {
+          "id": "Q2532560",
+          "name": "джент"
+        },
+        {
+          "id": "Q183862",
+          "name": "металкор"
+        },
+        {
+          "id": "Q484344",
+          "name": "прогресивний метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q80808767",
+      "name_uk": "Kalush Orchestra",
+      "name_en": "Kalush Orchestra",
+      "description": "український фолк-реп-гурт, переможець Євробачення 2022",
+      "artist_type": "group",
+      "start_year": 2021,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/-%20EU2024BE%20Informal%20meeting%20of%20EU%20Affairs%20Ministers%20BOZAR%20JNZT%200103%20%2853687141247%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q80808767",
+      "spotify_url": "https://open.spotify.com/artist/6fNkvAT7XRYuIynD5RTSLf",
+      "youtube_url": "https://www.youtube.com/channel/UCmLKOi5GULCxzIyA4ZvHqwA",
+      "genres": [
+        {
+          "id": "Q17053024",
+          "name": "folkhop"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q47494823",
+      "name_uk": "Kazka",
+      "name_en": "Kazka",
+      "description": "український гурт",
+      "artist_type": "group",
+      "start_year": 2017,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kazka%20during%20an%20interview%20in%20The%20Hague%20%28the%20Netherlands%29.png",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q47494823",
+      "spotify_url": "https://open.spotify.com/artist/6tnqzaOroG2OtBaSfVJbEw",
+      "youtube_url": "https://www.youtube.com/channel/UC6YPMrS8eIDHGR1kM9bNm9g",
+      "genres": [
+        {
+          "id": "Q16152327",
+          "name": "Ukrainian pop"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q53844985",
+      "name_uk": "Latexfauna",
+      "name_en": "Latexfauna",
+      "description": "український музичний гурт у жанрі дрім-поп",
+      "artist_type": "group",
+      "start_year": 2015,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Razomfest2018.196.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q53844985",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCyND_TEv2zYfMRvwc4c2fEQ",
+      "genres": [
+        {
+          "id": "Q592330",
+          "name": "Дрім-поп"
+        },
+        {
+          "id": "Q1298934",
+          "name": "синтпоп"
+        },
+        {
+          "id": "Q842324",
+          "name": "інді-поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q19341672",
+      "name_uk": "ONUKA",
+      "name_en": "Onuka",
+      "description": "українська електро-фолк група",
+      "artist_type": "group",
+      "start_year": 2013,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9C%D0%B0%D1%80%D0%B8%D1%8F%20%D0%A1%D0%BE%D1%80%D0%BE%D0%BA%D0%B8%D0%BD%D0%B0%2C%20%D0%9D%D0%B0%D1%82%D0%B0%20%D0%96%D0%B8%D0%B6%D1%87%D0%B5%D0%BD%D0%BA%D0%BE%2C%20%D0%94%D0%B0%D1%80%D0%B8%D0%BD%D0%B0%20%D0%A1%D0%B5%D1%80%D1%82%20.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q19341672",
+      "spotify_url": "https://open.spotify.com/artist/2MVGuFg7kJgmXC2RkpJxz6",
+      "youtube_url": "https://www.youtube.com/channel/UCp3u6S6oDEpVrkA7zmUQxvg",
+      "genres": [
+        {
+          "id": "Q1640319",
+          "name": "експериментальна музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q114036382",
+      "name_uk": "Artbat",
+      "name_en": "Artbat",
+      "description": "Ukrainian electronic music duo",
+      "artist_type": "group",
+      "start_year": 2014,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q114036382",
+      "spotify_url": "https://open.spotify.com/artist/3BkRu2TGd2I1uBxZKddfg1",
+      "youtube_url": "https://www.youtube.com/channel/UCkFgRdbsN5d6gVqMB_lVaQg",
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q11692618",
+      "name_uk": "DagaDana",
+      "name_en": "DagaDana",
+      "description": "польсько-український музичний гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Dagadana%20w%20Mumbaju.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11692618",
+      "spotify_url": "https://open.spotify.com/artist/7JVB1NU2XgRA0lViT3HPrt",
+      "youtube_url": "https://www.youtube.com/channel/UCZHdmQaNEHsZ6x-Nxg4M5bQ",
+      "genres": [
+        {
+          "id": "Q106298881",
+          "name": "сучасна фолк-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12071457",
+      "name_uk": "Kozak System",
+      "name_en": "Kozak System",
+      "description": "український рок-гурт",
+      "artist_type": "group",
+      "start_year": 2012,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kozak%20System.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12071457",
+      "spotify_url": "https://open.spotify.com/artist/5q8tYmXoNXEJGIuafacuHa",
+      "youtube_url": "https://www.youtube.com/channel/UCv_YvUYKLpgQkbTWP0DQorQ",
+      "genres": [
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        },
+        {
+          "id": "Q1425661",
+          "name": "фолк-панк"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12071620",
+      "name_uk": "Made in Ukraine",
+      "name_en": "Made in Ukraine",
+      "description": "представник сучасної української музичної сцени",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12071620",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12072067",
+      "name_uk": "Pianoбой",
+      "name_en": "Pianoboy",
+      "description": "український гурт, заснований Дмитром Шуровим",
+      "artist_type": "group",
+      "start_year": 2009,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/UA%20Paralympic%20team%20accompanying%20ceremony%202018%2068%20Pianoboy%2047.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12072067",
+      "spotify_url": "https://open.spotify.com/artist/1ppxFH3BBfEBFTAo4sj7KJ",
+      "youtube_url": "https://www.youtube.com/channel/UCPlKtUOknX7n6fx-2Xq-Cwg",
+      "genres": [
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        },
+        {
+          "id": "Q183504",
+          "name": "інді-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12072569",
+      "name_uk": "Stoned Jesus",
+      "name_en": "Stoned Jesus",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Hellfest2026StonedJesus%207.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12072569",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q1772422",
+          "name": "стоунер-метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12108755",
+      "name_uk": "Карна (гурт)",
+      "name_en": "Karna (rock band)",
+      "description": "український рок-гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12108755",
+      "spotify_url": "https://open.spotify.com/artist/3MoZ4E89fo2vGdf2IKfRCj",
+      "youtube_url": "https://www.youtube.com/channel/UCa1tNV8Il39y4QG0YA7xAPQ",
+      "genres": [
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        },
+        {
+          "id": "Q263734",
+          "name": "ню-метал"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12110828",
+      "name_uk": "Кобза",
+      "name_en": "Kobza",
+      "description": "один з найвідоміших вокально-інструментальних ансамблів України 1970-1980-х років",
+      "artist_type": "group",
+      "start_year": 1971,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12110828",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12116768",
+      "name_uk": "Ла-Манш",
+      "name_en": "La-Mansh",
+      "description": "український рок-гурт з Івано-Франківська, що існував з 1998 по 2000 роки",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12116768",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12132897",
+      "name_uk": "Національний ансамбпь солістів «Київська камерата»",
+      "name_en": "Kyiv Camerata",
+      "description": "musical group in Kyiv",
+      "artist_type": "group",
+      "start_year": 1977,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%20%D0%BA%D0%B0%D0%BC%D0%B5%D1%80%D0%B0%D1%82%D0%B0%20%D0%B2%20%D0%91%D0%97%D0%97.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12132897",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q9730",
+          "name": "класична музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q124407067",
+      "name_uk": "Ziferblat",
+      "name_en": "Ziferblat",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": 2015,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/PrepartyES%20-%20Ziferblat%2001.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q124407067",
+      "spotify_url": "https://open.spotify.com/artist/1PYz5uoK1NSdWERupvt8BR",
+      "youtube_url": "https://www.youtube.com/channel/UC2C2PEuAMqZmxlNKemT9png",
+      "genres": [
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1261136",
+      "name_uk": "Drudkh",
+      "name_en": "Drudkh",
+      "description": "Ukrainian black metal band",
+      "artist_type": "group",
+      "start_year": 2003,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Drudkh%20logo.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1261136",
+      "spotify_url": "https://open.spotify.com/artist/4q5mj9YpaYesKvHzN8XYve",
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q132438",
+          "name": "блек-метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1268319",
+      "name_uk": "Chervona Ruta",
+      "name_en": "Chervona Ruta",
+      "description": "музичний гурт",
+      "artist_type": "group",
+      "start_year": 1971,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1268319",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q58339",
+          "name": "диско"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q11700058",
+          "name": "поп-фолк"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q131520019",
+      "name_uk": "ДК Енергетик",
+      "name_en": "DK Energetyk",
+      "description": "український постпанк гурт",
+      "artist_type": "group",
+      "start_year": 2022,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q131520019",
+      "spotify_url": "https://open.spotify.com/artist/3eYHCFBRUK9hyTm6aG08LD",
+      "youtube_url": "https://www.youtube.com/channel/UCxlaWRNFORSoivqS7RW0blg",
+      "genres": [
+        {
+          "id": "Q598929",
+          "name": "постпанк"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q13424654",
+      "name_uk": "Lama",
+      "name_en": "Lama",
+      "description": "український поп-рок гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Lama%20%28Lviv%29.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q13424654",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1373359",
+      "name_uk": "Ґринджоли",
+      "name_en": "GreenJolly",
+      "description": "український гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1373359",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1383157",
+      "name_uk": "Kazaky",
+      "name_en": "Kazaky",
+      "description": "музичний гурт",
+      "artist_type": "group",
+      "start_year": 2010,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/OEVMA%202011-6.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1383157",
+      "spotify_url": "https://open.spotify.com/artist/6uPnr3XdPsToaX6kKfptwd",
+      "youtube_url": "https://www.youtube.com/channel/UCPcWlOivE55NW1E3ZuWa5rw",
+      "genres": [
+        {
+          "id": "Q1298934",
+          "name": "синтпоп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q15214335",
+      "name_uk": "Фолькнери",
+      "name_en": "Folknery",
+      "description": "Ukrainian free folk band",
+      "artist_type": "group",
+      "start_year": 2009,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Folknery%20Wave-Gotik-Treffen.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q15214335",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCfd9aaL1dcYlvw_lteDofeA",
+      "genres": [
+        {
+          "id": "Q98528183",
+          "name": "free folk"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q15651243",
+      "name_uk": "тітушки",
+      "name_en": "Titushky",
+      "description": "особи, яких часто наймають, щоб залякувати або нападати на політичних опонентів чи протестувальників; термін походить з України",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Young%20people%20by%20the%20Cabinet%20of%20Ministers%20of%20Ukraine%20on%20November%2024%2C%202013.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q15651243",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1588889",
+      "name_uk": "Hate Forest",
+      "name_en": "Hate Forest",
+      "description": "Ukrainian black metal band",
+      "artist_type": "group",
+      "start_year": 1995,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1588889",
+      "spotify_url": "https://open.spotify.com/artist/33P8BQpmm8huSmKrBKgmQW",
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q132438",
+          "name": "блек-метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1588954",
+      "name_uk": "Holy Blood",
+      "name_en": "Holy Blood",
+      "description": "музичний гурт",
+      "artist_type": "group",
+      "start_year": 1999,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1588954",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q484179",
+          "name": "фолк-метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q161725",
+      "name_uk": "Nokturnal Mortum",
+      "name_en": "Nokturnal Mortum",
+      "description": "Ukrainian black metal band",
+      "artist_type": "group",
+      "start_year": 1994,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Nokturnal%20Mortum%203.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q161725",
+      "spotify_url": "https://open.spotify.com/artist/5xXpxy1ik670YwTolmT7Yr",
+      "youtube_url": "https://www.youtube.com/channel/UCQMbPBWMt6efJ8MVHls5pRw",
+      "genres": [
+        {
+          "id": "Q533914",
+          "name": "Націонал-соціалістичний блек-метал"
+        },
+        {
+          "id": "Q1457545",
+          "name": "Паган-метал"
+        },
+        {
+          "id": "Q1621467",
+          "name": "Симфонічний блек-метал"
+        },
+        {
+          "id": "Q484179",
+          "name": "фолк-метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q16283937",
+      "name_uk": "Dakh Daughters",
+      "name_en": "Dakh Daughters",
+      "description": "український театрально-музичний гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Dakh%20Daughters%20%2814570877571%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q16283937",
+      "spotify_url": "https://open.spotify.com/artist/74sycYE6hlYuoelM902cE0",
+      "youtube_url": "https://www.youtube.com/channel/UCGom0kKeBd7mYL7Msuf3W-w",
+      "genres": [
+        {
+          "id": "Q27976507",
+          "name": "кабаре"
+        },
+        {
+          "id": "Q43343",
+          "name": "національна музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1633903",
+      "name_uk": "Los Colorados",
+      "name_en": "Los Colorados",
+      "description": "музичний гурт",
+      "artist_type": "group",
+      "start_year": 2006,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Los%20Colorados%20recording%20video%20%22I%20Like%20To%20Move%20It%22.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1633903",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1637293",
+      "name_uk": "Воплі Відоплясова",
+      "name_en": "Vopli Vidopliassova",
+      "description": "Рок-гурт",
+      "artist_type": "group",
+      "start_year": 1986,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Vopli%20Vidoplyasova%20MRPL%20City%202018.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1637293",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCMQ3o3hNHCL-ypGJfbehQrQ",
+      "genres": [
+        {
+          "id": "Q10922",
+          "name": "гардкор-панк"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        },
+        {
+          "id": "Q1425661",
+          "name": "фолк-панк"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q164718",
+      "name_uk": "Kroda",
+      "name_en": "Kroda",
+      "description": "Ukrainian pagan metal band",
+      "artist_type": "group",
+      "start_year": 2003,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q164718",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q1457545",
+          "name": "Паган-метал"
+        },
+        {
+          "id": "Q132438",
+          "name": "блек-метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q16709765",
+      "name_uk": "Один в каное",
+      "name_en": "Odyn v kanoe",
+      "description": "український музичний інді-гурт зі Львова",
+      "artist_type": "group",
+      "start_year": 2010,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9E%D0%B4%D0%B8%D0%BD%20%D0%B2%20%D0%BA%D0%B0%D0%BD%D0%BE%D0%B5.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q16709765",
+      "spotify_url": "https://open.spotify.com/artist/5fMNki1cAszN37EYRTVdOc",
+      "youtube_url": "https://www.youtube.com/channel/UCVHOlMtc4e0rrQlJvjjnRmg",
+      "genres": [
+        {
+          "id": "Q1641839",
+          "name": "експериментальний рок"
+        },
+        {
+          "id": "Q183504",
+          "name": "інді-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q16721901",
+      "name_uk": "Хайтарма (ансамбль)",
+      "name_en": "Qaytarma",
+      "description": "Crimean Tatar folk dance ensemble",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q16721901",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q16964934",
+      "name_uk": "Валентин Стрикало",
+      "name_en": "Valentin Strykalo",
+      "description": "псевдонім Юрія Каплана, однойменна музична група",
+      "artist_type": "group",
+      "start_year": 2010,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%92%D0%B0%D0%BB%D0%B5%D0%BD%D1%82%D0%B8%D0%BD%20%D0%A1%D1%82%D1%80%D1%8B%D0%BA%D0%B0%D0%BB%D0%BE%20%D0%B2%20%D0%97%D0%B5%D0%BB%D1%91%D0%BD%D0%BE%D0%BC%20%D1%82%D0%B5%D0%B0%D1%82%D1%80%D0%B5%203.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q16964934",
+      "spotify_url": "https://open.spotify.com/artist/2zYmwYLeJvcr8vRQe5pQRa",
+      "youtube_url": "https://www.youtube.com/channel/UCU58hykwxeSnT7B0TRdR3Sg",
+      "genres": [
+        {
+          "id": "Q211573",
+          "name": "Гаражний рок"
+        },
+        {
+          "id": "Q209137",
+          "name": "Пост-рок"
+        },
+        {
+          "id": "Q4056436",
+          "name": "авторська пісня"
+        },
+        {
+          "id": "Q1391336",
+          "name": "камеді-рок"
+        },
+        {
+          "id": "Q703778",
+          "name": "неопсиходелія"
+        },
+        {
+          "id": "Q487914",
+          "name": "поп-панк"
+        },
+        {
+          "id": "Q842324",
+          "name": "інді-поп"
+        },
+        {
+          "id": "Q183504",
+          "name": "інді-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1706805",
+      "name_uk": "Make Me Famous",
+      "name_en": "Make Me Famous",
+      "description": "band that plays metalcore",
+      "artist_type": "group",
+      "start_year": 2010,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Make%20Me%20Famous%20August%202012.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1706805",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q183862",
+          "name": "металкор"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1824889",
+      "name_uk": "АННА",
+      "name_en": "ANNA",
+      "description": "гурт",
+      "artist_type": "group",
+      "start_year": 2002,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%92%D1%96%D0%BA%D1%82%D0%BE%D1%80%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%8C%D0%BE%D0%BB%D0%BE%D0%B2.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1824889",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q263734",
+          "name": "ню-метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q18605949",
+      "name_uk": "Svjata Vatra",
+      "name_en": "Svjata Vatra",
+      "description": "Estonian-Ukrainian musical group",
+      "artist_type": "group",
+      "start_year": 2005,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Svjata%20Vatra%20-%20Nagyhars%C3%A1ny%2C%202014.08.06%20%281%29.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q18605949",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q43343",
+          "name": "національна музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q18762242",
+      "name_uk": "Brunettes Shoot Blondes",
+      "name_en": "Brunettes Shoot Blondes",
+      "description": "український інді-рок гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Brunettes%20Shoot%20Blondes%202019%20Promo%201.jpeg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q18762242",
+      "spotify_url": "https://open.spotify.com/artist/620FTOvnoeCIRuqX7QAeay",
+      "youtube_url": "https://www.youtube.com/channel/UCZ6nzr2kbRbxIvelWzPd7Qw",
+      "genres": [
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        },
+        {
+          "id": "Q183504",
+          "name": "інді-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q18808200",
+      "name_uk": "Тулим (реп-гурт)",
+      "name_en": "Tulym",
+      "description": "український хіп-хоп гурт",
+      "artist_type": "group",
+      "start_year": 2008,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q18808200",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1967987",
+      "name_uk": "Гайдамаки",
+      "name_en": "Haydamaky",
+      "description": "український рок-гурт",
+      "artist_type": "group",
+      "start_year": 1991,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Haydamaky%20%28UKR%29%20-%20Sziget%202015.08.15%20%287%29.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1967987",
+      "spotify_url": "https://open.spotify.com/artist/5799ZsuXWM0Tpl1DmazlZc",
+      "youtube_url": "https://www.youtube.com/channel/UCRieFHuqPx2kcRb6rFAAYZA",
+      "genres": [
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1968021",
+      "name_uk": "Плач Єремії",
+      "name_en": "Plach Yeremiyi",
+      "description": "український рок-гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1968021",
+      "spotify_url": "https://open.spotify.com/artist/7ifsjGOD2trth519JuzcuW",
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q193355",
+          "name": "блюз-рок"
+        },
+        {
+          "id": "Q1077388",
+          "name": "сентиментальна балада"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1969606",
+      "name_uk": "Dub Buk",
+      "name_en": "Dub Buk",
+      "description": "Ukrainian musical group; pagan black metal band",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1969606",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q1457545",
+          "name": "Паган-метал"
+        },
+        {
+          "id": "Q132438",
+          "name": "блек-метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1972083",
+      "name_uk": "Ундервуд",
+      "name_en": "Undervud",
+      "description": "Ukrainian musical group",
+      "artist_type": "group",
+      "start_year": 1995,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Undervud.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1972083",
+      "spotify_url": "https://open.spotify.com/artist/72B99GBEFdbbEAfmKMdYrr",
+      "youtube_url": "https://www.youtube.com/channel/UC9ntzSsdeNT8VThSN4S18Bw",
+      "genres": [
+        {
+          "id": "Q2624785",
+          "name": "Російський рок"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        },
+        {
+          "id": "Q183504",
+          "name": "інді-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1974048",
+      "name_uk": "Lюk",
+      "name_en": "Luk",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": 1999,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/L%D1%8Ek%20-%20Ukrainian%20musical%20group1.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1974048",
+      "spotify_url": "https://open.spotify.com/artist/3IjGzjXnEvlD3boRODLnqJ",
+      "youtube_url": "https://www.youtube.com/channel/UCsXIWMCmp5-c7XmqSWRwRvQ",
+      "genres": [
+        {
+          "id": "Q221772",
+          "name": "Ейсид-джаз"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q20069336",
+      "name_uk": "Потап і Настя",
+      "name_en": "Potap & Nastya",
+      "description": "музичний дует",
+      "artist_type": "group",
+      "start_year": 2006,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Potap%20and%20Nastya%20photoshooting%20at%20Laima%20Rendez%20Vous%20Jurmala%202017.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q20069336",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCpf13pueSPyfS3a3sn_ZbSQ",
+      "genres": [
+        {
+          "id": "Q438503",
+          "name": "альтернативний хіп-хоп"
+        },
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q6010",
+          "name": "реп"
+        },
+        {
+          "id": "Q850412",
+          "name": "сучасний ритм-енд-блюз"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2024748",
+      "name_uk": "ТіК",
+      "name_en": "TIK",
+      "description": "Ukrainian rock band",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/TIK%20Band.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2024748",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCftX1M6vNjf720CJGkVhikg",
+      "genres": [
+        {
+          "id": "Q3071",
+          "name": "панк-рок"
+        },
+        {
+          "id": "Q54365",
+          "name": "ска"
+        },
+        {
+          "id": "Q1425661",
+          "name": "фолк-панк"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2061578",
+      "name_uk": "Крихітка Цахес",
+      "name_en": "Krykhitka Tsakhes",
+      "description": "former Ukrainian music band",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2061578",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2062788",
+      "name_uk": "СКАЙ",
+      "name_en": "SKAI",
+      "description": "український рок-гурт",
+      "artist_type": "group",
+      "start_year": 2001,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%A4%D0%BE%D1%82%D0%BE%20%D0%B3%D1%83%D1%80%D1%82%D1%83%20%D0%A1%D0%9A%D0%90%D0%99%202016%20%D1%80%D1%96%D0%BA.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2062788",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCDsny_1rQXgWDzWyBV49aCg",
+      "genres": [
+        {
+          "id": "Q1899347",
+          "name": "Постпанк-ривайвл"
+        },
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        },
+        {
+          "id": "Q487914",
+          "name": "поп-панк"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q23072454",
+      "name_uk": "Open Kids",
+      "name_en": "Open Kids",
+      "description": "український дівочий поп-гурт",
+      "artist_type": "group",
+      "start_year": 2012,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Open%20Kids%20%D0%B2%20%D0%A1%D0%9F%D0%B1%20161221.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q23072454",
+      "spotify_url": "https://open.spotify.com/artist/2cWAkrZPYPs9JSA6KCdnva",
+      "youtube_url": "https://www.youtube.com/channel/UCDlAJAQ-MWS277P2aN4A0MQ",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2384025",
+      "name_uk": "FliT",
+      "name_en": "FliT",
+      "description": "український музичний гурт з Івано-Франківська, створений в 2001 році, основним напрямом в стилі є панк-рок",
+      "artist_type": "group",
+      "start_year": 2001,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/FLIT%20danieluk%202005.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2384025",
+      "spotify_url": "https://open.spotify.com/artist/5qsoQ5KuMdFKIo8rvUroCU",
+      "youtube_url": "https://www.youtube.com/channel/UC3lXFVYHqAZHTeCodyniADw",
+      "genres": [
+        {
+          "id": "Q3071",
+          "name": "панк-рок"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2388470",
+      "name_uk": "Танок на Майдані Конґо",
+      "name_en": "TNMK",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": 1996,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%92%D0%BF%20%D1%82%D0%BD%D0%BC%D0%BA%202.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2388470",
+      "spotify_url": "https://open.spotify.com/artist/2sOErXYVMC4jCWVvBPI19l",
+      "youtube_url": "https://www.youtube.com/channel/UCDvNviv3R_dBFdTfZwiB0MQ",
+      "genres": [
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        },
+        {
+          "id": "Q6010",
+          "name": "реп"
+        },
+        {
+          "id": "Q3930216",
+          "name": "репкор"
+        },
+        {
+          "id": "Q164444",
+          "name": "фанк"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2496997",
+      "name_uk": "Піккардійська терція",
+      "name_en": "Pikkardiyska Tertsiya",
+      "description": "український акапельний ансамбль",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/PikkardiyskaTertsia01.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2496997",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCXIdtNQCL7RVzVafLtMw9dA",
+      "genres": [
+        {
+          "id": "Q185298",
+          "name": "А капела"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2514599",
+      "name_uk": "Mirami",
+      "name_en": "Mirami",
+      "description": "український жіночий музичний гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Mirami%20Avatar%202024-01.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2514599",
+      "spotify_url": "https://open.spotify.com/artist/3WiuFgUjR1rCHpK4aucC7G",
+      "youtube_url": "https://www.youtube.com/channel/UCzLCRhnrWul_2V-kL6WGpog",
+      "genres": [
+        {
+          "id": "Q641066",
+          "name": "жіночий гурт"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q25433330",
+      "name_uk": "Раббота Хо",
+      "name_en": "Rabbota Ho",
+      "description": "Ukrainian musical group",
+      "artist_type": "group",
+      "start_year": 1987,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q25433330",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        },
+        {
+          "id": "Q1641839",
+          "name": "експериментальний рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2671046",
+      "name_uk": "Мертвий Півень",
+      "name_en": "Mertvy Piven",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": 1989,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Mertvyi%20Piven.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2671046",
+      "spotify_url": "https://open.spotify.com/artist/62V9PGJyCd8DyWyXSLzdpC",
+      "youtube_url": "https://www.youtube.com/channel/UCHaQMayMwRbFtxIEp5O9fHA",
+      "genres": [
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q285383",
+      "name_uk": "Обійми Дощу",
+      "name_en": "Obiymy Doshchu",
+      "description": "музичний гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9E%D0%B1%D1%96%D0%B9%D0%BC%D0%B8%20%D0%94%D0%BE%D1%89%D1%83%202017.jpeg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q285383",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q28701972",
+      "name_uk": "Без Обмежень",
+      "name_en": "Bez obmezhen",
+      "description": "український гурт",
+      "artist_type": "group",
+      "start_year": 1999,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%91%D0%B5%D0%B7%20%D0%BE%D0%B1%D0%BC%D0%B5%D0%B6%D0%B5%D0%BD%D1%8C%20%28Without-limits%2C%20Ukrainian-rock-band%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q28701972",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCgoVxhljnlgwUlMw5k8_Cjg",
+      "genres": [
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q28835047",
+      "name_uk": "Грибы",
+      "name_en": "Griby",
+      "description": "російськомовний гурт із України",
+      "artist_type": "group",
+      "start_year": 2016,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q28835047",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCZKli9e8gb7_u68OIthfdYQ",
+      "genres": [
+        {
+          "id": "Q20502",
+          "name": "гауз"
+        },
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q29567211",
+      "name_uk": "Mavka",
+      "name_en": "Mavka",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q29567211",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q3391785",
+      "name_uk": "Yin-Yang",
+      "name_en": "Yin-Yang",
+      "description": "Russian-Ukrainian pop group",
+      "artist_type": "group",
+      "start_year": 2007,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q3391785",
+      "spotify_url": "https://open.spotify.com/artist/0WjNZcwh7ElaNtGQNIAG0J",
+      "youtube_url": "https://www.youtube.com/channel/UCFs5W415jzOZlv6hdQgUkhw",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q35356",
+      "name_uk": "NikitA",
+      "name_en": "NikitA",
+      "description": "український жіночий гурт",
+      "artist_type": "group",
+      "start_year": 2008,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/NIKITA.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q35356",
+      "spotify_url": "https://open.spotify.com/artist/0UCa56b7hiX05ZWC5BH2zo",
+      "youtube_url": "https://www.youtube.com/channel/UClt36P_dHnpoXTCpWcOJUdA",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q35918",
+      "name_uk": "ВІА Гра",
+      "name_en": "Nu Virgos",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": 2000,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0%20%C2%AB%D0%92%D0%98%D0%90%20%D0%93%D1%80%D0%B0%C2%BB%20%282019%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q35918",
+      "spotify_url": "https://open.spotify.com/artist/7n5zpKbOmeWWmXA1mqDc3q",
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q211756",
+          "name": "денспоп"
+        },
+        {
+          "id": "Q216961",
+          "name": "євроденс"
+        },
+        {
+          "id": "Q517415",
+          "name": "європоп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q3874816",
+      "name_uk": "Алібі",
+      "name_en": "The Alibi Sister",
+      "description": "Ukrainian music duo",
+      "artist_type": "group",
+      "start_year": 2001,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Alibi-hosts-of-IX-Favorites-of-Success-Awarding-Ceremony.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q3874816",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCJquAxG0Pw2sx0-6vCoHTmg",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q850412",
+          "name": "сучасний ритм-енд-блюз"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4042178",
+      "name_uk": "Khors",
+      "name_en": "Khors",
+      "description": "Гурт",
+      "artist_type": "group",
+      "start_year": 2004,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Khors%20Dark%20Troll%202016%2014.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4042178",
+      "spotify_url": "https://open.spotify.com/artist/3tJCrNrAyyrC4BRVeTzD6t",
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q132438",
+          "name": "блек-метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4043761",
+      "name_uk": "Marvel",
+      "name_en": "Marvel (band)",
+      "description": "представник сучасної української музичної сцени",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Marvel%20foto.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4043761",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q20378",
+          "name": "альтернативний метал"
+        },
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        },
+        {
+          "id": "Q484344",
+          "name": "прогресивний метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4045567",
+      "name_uk": "O.Torvald",
+      "name_en": "O.Torvald",
+      "description": "український гурт",
+      "artist_type": "group",
+      "start_year": 2005,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/2015%20Woodstock%20226%20O.Torvald.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4045567",
+      "spotify_url": "https://open.spotify.com/artist/3H9tbqoneuzYDgg2CAcUuy",
+      "youtube_url": "https://www.youtube.com/channel/UCprbz0DslX4L777WfnfGFBw",
+      "genres": [
+        {
+          "id": "Q20378",
+          "name": "альтернативний метал"
+        },
+        {
+          "id": "Q487914",
+          "name": "поп-панк"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4046032",
+      "name_uk": "Ot Vinta!",
+      "name_en": "Ot Vinta",
+      "description": "український рок-гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Ot%20Vinta%21.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4046032",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCXdTS-qbgTVPJ0Zz9Hte3uw",
+      "genres": [
+        {
+          "id": "Q203720",
+          "name": "Рокабілі"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4047654",
+      "name_uk": "Pur:Pur",
+      "name_en": "Pur:Pur",
+      "description": "Ukrainian musical group",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4047654",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCUjEAP3W1EgVVPdEx0GgQeA",
+      "genres": [
+        {
+          "id": "Q1141081",
+          "name": "Лаунж"
+        },
+        {
+          "id": "Q842324",
+          "name": "інді-поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4067129",
+      "name_uk": "Антитіла",
+      "name_en": "Antytila",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": 2008,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%90%D0%BD%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D0%B0.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4067129",
+      "spotify_url": "https://open.spotify.com/artist/5sc9td6C7xxPa3mOmmvXPu",
+      "youtube_url": "https://www.youtube.com/channel/UCaA2YF_NAtTOngsBRpZKieA",
+      "genres": [
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4096030",
+      "name_uk": "Брати Гадюкіни",
+      "name_en": "Braty Hadyukiny",
+      "description": "Культовий український рок-гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Culture%20and%20life%2C%2047-2014.pdf",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4096030",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCAceA-424TU6KdOo5w5ULqw",
+      "genres": [
+        {
+          "id": "Q43343",
+          "name": "національна музика"
+        },
+        {
+          "id": "Q3071",
+          "name": "панк-рок"
+        },
+        {
+          "id": "Q9794",
+          "name": "реґі"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        },
+        {
+          "id": "Q7749",
+          "name": "рок-н-рол"
+        },
+        {
+          "id": "Q54365",
+          "name": "ска"
+        },
+        {
+          "id": "Q164444",
+          "name": "фанк"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4168632",
+      "name_uk": "Друга Ріка",
+      "name_en": "Druha Rika",
+      "description": "український рок-гурт",
+      "artist_type": "group",
+      "start_year": 1996,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/UA%20Paralympic%20team%20ceremony%202018%2029%20%D0%94%D1%80%D1%83%D0%B3%D0%B0%20%D0%A0%D1%96%D0%BA%D0%B0.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4168632",
+      "spotify_url": "https://open.spotify.com/artist/4bIZE5XbGFjR4rT2VQPIHy",
+      "youtube_url": "https://www.youtube.com/channel/UCYpBzZVsoqKe1XRt4to9Qdw",
+      "genres": [
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4230308",
+      "name_uk": "Кому Вниз",
+      "name_en": "Komu Vnyz",
+      "description": "український рок-гурт, створений 1988 року",
+      "artist_type": "group",
+      "start_year": 1988,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Komu%20Vnyz%20v%20TERNOPOLI.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4230308",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UC_Xlm90SR-z7RaK1RdTF5Xg",
+      "genres": [
+        {
+          "id": "Q485395",
+          "name": "Готичний рок"
+        },
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        },
+        {
+          "id": "Q83270",
+          "name": "гардрок"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4238140",
+      "name_uk": "Красная плесень",
+      "name_en": "Krasnaya Plesen",
+      "description": "Russian punk-rock-band",
+      "artist_type": "group",
+      "start_year": 1989,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B5%D1%81%D0%B5%D0%BD%D1%8C%20%D0%B2%20%D0%9E%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D0%BD%D0%B5.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4238140",
+      "spotify_url": "https://open.spotify.com/artist/7cvAvAtLzZaJU0eaVvdcK5",
+      "youtube_url": "https://www.youtube.com/channel/UCLPuIBUfgKu_Sc0JYIKDMiw",
+      "genres": [
+        {
+          "id": "Q3071",
+          "name": "панк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4314837",
+      "name_uk": "Київська капела бандуристів",
+      "name_en": "Kyiv Bandurist Capella",
+      "description": "vocal-instrumental ensemble",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kyiv1925.jpeg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4314837",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4315474",
+      "name_uk": "НеАнгели",
+      "name_en": "NuAngels",
+      "description": "український гурт",
+      "artist_type": "group",
+      "start_year": 2006,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/NeAngely.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4315474",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCl8_r54tjhV2RPNsLXX0seA",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4328421",
+      "name_uk": "Нэнси",
+      "name_en": "Nensi",
+      "description": "Ukrainian-Russian musical group",
+      "artist_type": "group",
+      "start_year": 1992,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0%20%D0%9D%D0%AD%D0%9D%D0%A1%D0%98%20%D0%BD%D0%B0%20%D0%94%D0%BD%D0%B5%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%20%2829%20%D0%B8%D1%8E%D0%BB%D1%8F%202012%20%D0%B3%D0%BE%D0%B4%D0%B0%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4328421",
+      "spotify_url": "https://open.spotify.com/artist/3ByuhMmJyglDCLFcBiZ30g",
+      "youtube_url": "https://www.youtube.com/channel/UChHhdvvJcmvtvkV-ORjW2Jw",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q1062400",
+          "name": "шансон"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4347710",
+      "name_uk": "Пающіє труси",
+      "name_en": "Payushchie Trusy",
+      "description": "поп-гурт",
+      "artist_type": "group",
+      "start_year": 2008,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4347710",
+      "spotify_url": "https://open.spotify.com/artist/2Xc1VSVTEZwNhbowk8cLKh",
+      "youtube_url": "https://www.youtube.com/channel/UCKBRdVaoXr8VUBEXiUZYKtw",
+      "genres": [
+        {
+          "id": "Q4444866",
+          "name": "Стьоб"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q6010",
+          "name": "реп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4351376",
+      "name_uk": "Перкалаба",
+      "name_en": "Perkalaba",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": 1998,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4351376",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCyORrwHr5uyI3-3j15UkF4A",
+      "genres": [
+        {
+          "id": "Q9794",
+          "name": "реґі"
+        },
+        {
+          "id": "Q460674",
+          "name": "скапанк"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4415071",
+      "name_uk": "Semargl",
+      "name_en": "semargl",
+      "description": "представник сучасної української музичної сцени",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4415071",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4468201",
+      "name_uk": "Тінь Сонця",
+      "name_en": "Tin Sontsia",
+      "description": "український фолк-метал-гурт",
+      "artist_type": "group",
+      "start_year": 1999,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Basowiszcza-2007-TinSoncia-3.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4468201",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UC6Db2HeEyqq7ZUTnXNBDloA",
+      "genres": [
+        {
+          "id": "Q484179",
+          "name": "фолк-метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q48955194",
+      "name_uk": "Мы (гурт)",
+      "name_en": "My",
+      "description": "Russian musical band",
+      "artist_type": "group",
+      "start_year": 2016,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q48955194",
+      "spotify_url": "https://open.spotify.com/artist/3WGL5CRtgYd8Tm5elcbsdV",
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q592330",
+          "name": "Дрім-поп"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q842324",
+          "name": "інді-поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q50364232",
+      "name_uk": "Пошлая Молли",
+      "name_en": "Poshlaya Molly",
+      "description": "український гурт",
+      "artist_type": "group",
+      "start_year": 2016,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%BE%D1%88%D0%BB%D0%B0%D1%8F%20%D0%9C%D0%BE%D0%BB%D0%BB%D0%B8%20%D0%BD%D0%B0%20%D1%84%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D0%B5%20%D0%9C%D0%B0%D1%8F%D1%82%D0%BD%D0%B8%D0%BA%20%D0%A4%D1%83%D0%BA%D0%BE%20%D0%B2%20%D0%A1%D0%9F%D0%B1%20%2807.09.2019%29%20%283%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q50364232",
+      "spotify_url": "https://open.spotify.com/artist/0xByDfltDVpk6LDsUMHyI2",
+      "youtube_url": "https://www.youtube.com/channel/UCDVnp5x53g5L-kBvQsGOW9w",
+      "genres": [
+        {
+          "id": "Q487914",
+          "name": "поп-панк"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q55423986",
+      "name_uk": "Kadnay",
+      "name_en": "Kadnay",
+      "description": "український гурт",
+      "artist_type": "group",
+      "start_year": 2012,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kadnay%20-%20M1%20Music%20Awards%202019.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q55423986",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCunnEcbAxZBY4vSlhH_hdTA",
+      "genres": [
+        {
+          "id": "Q188450",
+          "name": "електропоп"
+        },
+        {
+          "id": "Q842324",
+          "name": "інді-поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q56878254",
+      "name_uk": "Ptakh_Jung",
+      "name_en": "Ptakh_Jung",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": 2016,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q56878254",
+      "spotify_url": "https://open.spotify.com/artist/6BFeIgcZ5vXRTmw7keACpa",
+      "youtube_url": "https://www.youtube.com/channel/UCgB3yvIx8mgfXjxBmskjSPw",
+      "genres": [
+        {
+          "id": "Q9778",
+          "name": "електронна музика"
+        },
+        {
+          "id": "Q193207",
+          "name": "ембієнт"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q59162746",
+      "name_uk": "Somali Yacht Club",
+      "name_en": "Somali Yacht Club",
+      "description": "музичний гурт",
+      "artist_type": "group",
+      "start_year": 2010,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q59162746",
+      "spotify_url": "https://open.spotify.com/artist/4sgZ0Kad8DGhIP422wLArV",
+      "youtube_url": "https://www.youtube.com/channel/UCdbDesdbwHVB4y2-OdaMPAA",
+      "genres": [
+        {
+          "id": "Q41343",
+          "name": "пост-метал"
+        },
+        {
+          "id": "Q617240",
+          "name": "стоунер-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q653863",
+      "name_uk": "Flëur",
+      "name_en": "Flëur",
+      "description": "одеський гурт",
+      "artist_type": "group",
+      "start_year": 2000,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Voynarovskaya%20Poulatova.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q653863",
+      "spotify_url": "https://open.spotify.com/artist/5Tn926kZjrSFPWnig9XxCy",
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q284543",
+          "name": "ethereal wave"
+        },
+        {
+          "id": "Q46046",
+          "name": "Бароко-поп"
+        },
+        {
+          "id": "Q592330",
+          "name": "Дрім-поп"
+        },
+        {
+          "id": "Q217467",
+          "name": "артрок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q6748214",
+      "name_uk": "Мандри (гурт)",
+      "name_en": "Mandry",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": 1997,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Mandry-2008.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q6748214",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UC5j8E1KLQ8sbGeL60mM_B3g",
+      "genres": [
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q727662",
+      "name_uk": "Чернівецька обласна філармонія",
+      "name_en": "Chernivtsi Philharmonic Hall",
+      "description": "musical ensemble",
+      "artist_type": "group",
+      "start_year": 1862,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%97%D0%B0%D0%BB%20%D0%BC%D1%83%D0%B7%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B8%D1%81%D1%82%D0%B2%D0%B0%20%28%D0%B0%D1%80%D1%85.%20%D0%92.%20%D0%93%D1%80%D0%B5%D0%BA%D1%83%D0%BB%29%2C%20%D0%BC%D1%96%D1%81%D1%82%D0%BE%20%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96%2C%20%D0%A4%D1%96%D0%BB%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D1%96%D1%97%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%2C%2010.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q727662",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q9730",
+          "name": "класична музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q732479",
+      "name_uk": "Тартак",
+      "name_en": "Tartak",
+      "description": "український репкор-гурт, заснований у Луцьку 1996 року",
+      "artist_type": "group",
+      "start_year": 1996,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%A2%D0%B0%D1%80%D0%A2%D0%B0%D0%BA.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q732479",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q835891",
+          "name": "funk rock"
+        },
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        },
+        {
+          "id": "Q263734",
+          "name": "ню-метал"
+        },
+        {
+          "id": "Q487914",
+          "name": "поп-панк"
+        },
+        {
+          "id": "Q856872",
+          "name": "реп-метал"
+        },
+        {
+          "id": "Q877693",
+          "name": "реп-рок"
+        },
+        {
+          "id": "Q3930216",
+          "name": "репкор"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q7937975",
+      "name_uk": "Вій (гурт)",
+      "name_en": "Viy",
+      "description": "Ukrainian folk rock band from Kyiv",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q7937975",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q80175",
+      "name_uk": "Quest Pistols",
+      "name_en": "Quest Pistols",
+      "description": "музичний гурт",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Quest%20Pistols%2015.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q80175",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCNN513M61v8zHyNBj-NOUAQ",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q517415",
+          "name": "європоп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q85987537",
+      "name_uk": "YAGÓDY",
+      "name_en": "YAGÓDY",
+      "description": "український театрально-музичний гурт",
+      "artist_type": "group",
+      "start_year": 2005,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/YAG%C3%93DY%2C%20Ukrainian%20Fashion%20Film%20Festival%202024.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q85987537",
+      "spotify_url": "https://open.spotify.com/artist/35NQZLJkcxTnCi4RJhgvDt",
+      "youtube_url": "https://www.youtube.com/channel/UCcVpW8tzRIx_4EsOgk_26Vw",
+      "genres": [
+        {
+          "id": "Q205049",
+          "name": "етнічна музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q955082",
+      "name_uk": "Lucifugum",
+      "name_en": "Lucifugum",
+      "description": "Ukrainian band",
+      "artist_type": "group",
+      "start_year": 1995,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q955082",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q132438",
+          "name": "блек-метал"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q964951",
+      "name_uk": "Гарячий шоколад",
+      "name_en": "Гарячий шоколад",
+      "description": "українська жіноча поп-група",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q964951",
+      "spotify_url": "https://open.spotify.com/artist/4s2I9QhWJUGTIhX6shOzsN",
+      "youtube_url": "https://www.youtube.com/channel/UC_Vn49EAOu1dF19GH-g9TcA",
+      "genres": [
+        {
+          "id": "Q211756",
+          "name": "денспоп"
+        },
+        {
+          "id": "Q9778",
+          "name": "електронна музика"
+        },
+        {
+          "id": "Q850412",
+          "name": "сучасний ритм-енд-блюз"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4051116",
+      "name_uk": "The Hardkiss",
+      "name_en": "The Hardkiss",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": 2011,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Thehardkiss2019.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4051116",
+      "spotify_url": "https://open.spotify.com/artist/4IJcztNtY5L7G3qK4yu1qt",
+      "youtube_url": "https://www.youtube.com/channel/UCgJxsxqbS_lQ3Y-_gbEq-lA",
+      "genres": [
+        {
+          "id": "Q325504",
+          "name": "електро-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12072918",
+      "name_uk": "Vivienne Mort",
+      "name_en": "Vivienne Mort",
+      "description": "український інді-рок гурт, який було засновано Даніелою Заюшкіною у 2007 році",
+      "artist_type": "group",
+      "start_year": null,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Vivienne%20Mort%20Photo2.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12072918",
+      "spotify_url": "https://open.spotify.com/artist/6mQd5HeHhMBZK8u2bTCduH",
+      "youtube_url": "https://www.youtube.com/channel/UCXesQeYmaNPEQxaXDHLtnPg",
+      "genres": [
+        {
+          "id": "Q46046",
+          "name": "Бароко-поп"
+        },
+        {
+          "id": "Q43343",
+          "name": "національна музика"
+        },
+        {
+          "id": "Q183504",
+          "name": "інді-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q336301",
+      "name_uk": "Бумбокс",
+      "name_en": "BoomBox",
+      "description": "український музичний гурт",
+      "artist_type": "group",
+      "start_year": 2004,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/BoomBox%20in%20Mykolaiv%20%E2%80%94%208.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q336301",
+      "spotify_url": "https://open.spotify.com/artist/2c3PFZtun8HemDbDfRPV6G",
+      "youtube_url": "https://www.youtube.com/channel/UCqNDUcjSClfL2QKx_W9HRmg",
+      "genres": [
+        {
+          "id": "Q835891",
+          "name": "funk rock"
+        },
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        },
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q6010",
+          "name": "реп"
+        },
+        {
+          "id": "Q7749",
+          "name": "рок-н-рол"
+        },
+        {
+          "id": "Q164444",
+          "name": "фанк"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4155339",
+      "name_uk": "ДахаБраха",
+      "name_en": "DakhaBrakha",
+      "description": "український музичний етно-гурт",
+      "artist_type": "group",
+      "start_year": 2004,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/DakhaBrakha%20in%20Lviv.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4155339",
+      "spotify_url": "https://open.spotify.com/artist/5hQYZqZaPcRceL82mFZTO5",
+      "youtube_url": "https://www.youtube.com/channel/UCiK8ixVCuaNWmC_xVGr8qCQ",
+      "genres": [
+        {
+          "id": "Q205049",
+          "name": "етнічна музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1008489",
+      "name_uk": "Океан Ельзи",
+      "name_en": "Okean Elzy",
+      "description": "український рок-гурт",
+      "artist_type": "group",
+      "start_year": 1994,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/OkeanElzi25.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1008489",
+      "spotify_url": "https://open.spotify.com/artist/6NTzEgUmN1PIBIYEHhf1kS",
+      "youtube_url": "https://www.youtube.com/channel/UCjJ-oj2aJTINILYLDv2MFEQ",
+      "genres": [
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        },
+        {
+          "id": "Q217467",
+          "name": "артрок"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q183504",
+          "name": "інді-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q59358454",
+      "name_uk": "alyona alyona",
+      "name_en": "Alyona Alyona",
+      "description": "українська хіп-хоп виконавиця",
+      "artist_type": "person",
+      "start_year": 1991,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Ayiona%20alyona%20%26%20Jerry%20Heil%2C%20Eurovision%202024%201st%20semi%20final%20rehearsal%2004%20%28cropped2%29.jpeg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q59358454",
+      "spotify_url": "https://open.spotify.com/artist/2ic3GGGmkixOZP4qnakSA8",
+      "youtube_url": "https://www.youtube.com/channel/UCX74kjhVcdu05Dm54BnQgyw",
+      "genres": [
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q56364121",
+      "name_uk": "Jerry Heil",
+      "name_en": "Jerry Heil",
+      "description": "українська співачка та авторка пісень",
+      "artist_type": "person",
+      "start_year": 1995,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Jerry%20Heil%2C%20Eurovision%202024%20Send-off%2007%20%28cropped%29.jpeg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q56364121",
+      "spotify_url": "https://open.spotify.com/artist/71DkA619tW0bpaMi4QBzmr",
+      "youtube_url": "https://www.youtube.com/channel/UCCf5_svdP2LGjhgt6nfXXYg",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q107646300",
+      "name_uk": "Анна Асті",
+      "name_en": "Anna Asti",
+      "description": "російська співачка",
+      "artist_type": "person",
+      "start_year": 1990,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%98%D0%B3%D0%BE%D1%80%D1%8C%20%D0%9A%D1%80%D1%83%D1%82%D0%BE%D0%B9%20%D0%B8%20Anna%20Asti%20%D0%BD%D0%B0%20%D0%A0%D0%9D%D0%9C%D0%9F%20-%202025%20%28cropped%20anna%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q107646300",
+      "spotify_url": "https://open.spotify.com/artist/40YXr3tdSqFv0kfmgjj8vP",
+      "youtube_url": "https://www.youtube.com/channel/UCT0lY7ZHQD7ecRiMpeyYHUQ",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q111127206",
+      "name_uk": "Вікторія Лелека",
+      "name_en": "Viktoria Leléka",
+      "description": "українська композиторка та співачка",
+      "artist_type": "person",
+      "start_year": 1990,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/20260510%20Leleka%20NZ93558.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q111127206",
+      "spotify_url": "https://open.spotify.com/artist/6SoecBx6mP4YfrEVVb0GcG",
+      "youtube_url": "https://www.youtube.com/channel/UC5dpSZRdkKmtjnWYNyJarhA",
+      "genres": [
+        {
+          "id": "Q5464464",
+          "name": "folk jazz"
+        },
+        {
+          "id": "Q9778",
+          "name": "електронна музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q114243348",
+      "name_uk": "Чорногуз Ярина Ярославівна",
+      "name_en": "Yaryna Chornohuz",
+      "description": "українська поетеса, волонтерка, військовослужбовиця, бойова медикиня, розвідниця",
+      "artist_type": "person",
+      "start_year": 1995,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Yaryna%20Chornohuz-FIG%202025.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q114243348",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q116733141",
+      "name_uk": "Марія Сур",
+      "name_en": "Maria Sur",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 2004,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Maria%20Sur%2C%20Melodifestivalen%202024%2C%20presskonf%2001%20%28cropped%29.jpeg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q116733141",
+      "spotify_url": "https://open.spotify.com/artist/7eoVDCrNq6NirTBRrgSoNA",
+      "youtube_url": "https://www.youtube.com/channel/UCriP6hvDoMMi1AzJZPd5mrw",
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q11801469",
+      "name_uk": "Положинський Олександр Євгенович",
+      "name_en": "Oleksandr Polozhynskyi",
+      "description": "український співак",
+      "artist_type": "person",
+      "start_year": 1972,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Sashko%20Polozhynskyi.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11801469",
+      "spotify_url": "https://open.spotify.com/artist/6NKa3iTFT9Yifg6vJnoIw1",
+      "youtube_url": "https://www.youtube.com/channel/UCDiPs6mG43y425RDgFdWXeg",
+      "genres": [
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12080013",
+      "name_uk": "Бабкіна Катерина Богданівна",
+      "name_en": "Kateryna Babkina",
+      "description": "українська письменниця",
+      "artist_type": "person",
+      "start_year": 1985,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kateryna%20Babkina.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12080013",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q213051",
+          "name": "нонфікшн"
+        },
+        {
+          "id": "Q1196408",
+          "name": "історична белетристика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12087281",
+      "name_uk": "Вакуленко Володимир Володимирович",
+      "name_en": "Volodymyr Vakulenko",
+      "description": "український дитячий письменник",
+      "artist_type": "person",
+      "start_year": 1972,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%92%D0%B0%D0%BA%D1%83%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE%20%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%20%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12087281",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q131539",
+          "name": "дитяча література"
+        },
+        {
+          "id": "Q7553",
+          "name": "переклад"
+        },
+        {
+          "id": "Q676",
+          "name": "проза"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12124379",
+      "name_uk": "Monatik",
+      "name_en": "Monatik",
+      "description": "український співак, танцюрист, автор пісень, саундпродюсер, композитор",
+      "artist_type": "person",
+      "start_year": 1986,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/President%20took%20part%20in%20the%20festive%20Parade%20of%20Troops%20on%20the%20occasion%20of%20the%2030th%20anniversary%20of%20Ukraine%27s%20independence.%20%2851716328653%29%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12124379",
+      "spotify_url": "https://open.spotify.com/artist/6wbEgVlGqWb4I9tbMluu5Q",
+      "youtube_url": "https://www.youtube.com/channel/UCYfMttB5X1awKZFDZIL8uVw",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12127853",
+      "name_uk": "Ірина Федишин",
+      "name_en": "Iryna Fedyshyn",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1987,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Iryna%20Fedyshyn%20M1%20Music%20Awards%202019%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12127853",
+      "spotify_url": "https://open.spotify.com/artist/5msO3VLWhKFDqmpBlGIfy7",
+      "youtube_url": "https://www.youtube.com/channel/UC8fcX8fKIETU6MYzv-gxKOQ",
+      "genres": [
+        {
+          "id": "Q43343",
+          "name": "національна музика"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q11700058",
+          "name": "поп-фолк"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12131555",
+      "name_uk": "Мірзоян Арсен Романович",
+      "name_en": "Arsen Mirzoyan",
+      "description": "український співак",
+      "artist_type": "person",
+      "start_year": 1978,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Arsen%20Baburka-Mirzoyan-02.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12131555",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCxrJhVU1_qf2sXRwCR7pP0g",
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12134613",
+      "name_uk": "Ніколайчук Аіда Юріївна",
+      "name_en": "Aida Nikolaychuk",
+      "description": "українська музикантка",
+      "artist_type": "person",
+      "start_year": 1982,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Aida%20Nikolaychuk%202013%20%28facecrop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12134613",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12161762",
+      "name_uk": "Токар Олена Миколаївна",
+      "name_en": "Olena Tokar",
+      "description": "Ukrainian opera singer",
+      "artist_type": "person",
+      "start_year": 1987,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12161762",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q9730",
+          "name": "класична музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12168970",
+      "name_uk": "Цілик Ірина Андріївна",
+      "name_en": "Iryna Tsilyk",
+      "description": "українська письменниця (поезія, проза) та кінорежисерка",
+      "artist_type": "person",
+      "start_year": 1982,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Tsilyk2.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12168970",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q12171389",
+      "name_uk": "Швачка Анжеліна Олексіївна",
+      "name_en": "Anzhelina Shvachka",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1971,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Angelina%20Shvachka%202016%20%28facecrop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q12171389",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q125885",
+      "name_uk": "Федорова Анна",
+      "name_en": "Anna Fedorova",
+      "description": "українська піаністка",
+      "artist_type": "person",
+      "start_year": 1990,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/AnnaFedorova.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q125885",
+      "spotify_url": "https://open.spotify.com/artist/4XYFHLIlPjNVP449LBmK6E",
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q9730",
+          "name": "класична музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1275963",
+      "name_uk": "Беркова Олена Сергіївна",
+      "name_en": "Elena Berkova",
+      "description": "television presenter, actress, singer and former pornographic actress (born 1985)",
+      "artist_type": "person",
+      "start_year": 1985,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Berkova1.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1275963",
+      "spotify_url": "https://open.spotify.com/artist/7CGHKIH7vfFcppGz1QurCv",
+      "youtube_url": "https://www.youtube.com/channel/UCOfNqX4ZEDM17FRpx-SkeFQ",
+      "genres": [
+        {
+          "id": "Q185529",
+          "name": "порнофільм"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q129119",
+      "name_uk": "Лижичко Руслана Степанівна",
+      "name_en": "Ruslana Lyzhychko",
+      "description": "українська співачка, піаністка, танцюристка, продюсерка та громадська діячка",
+      "artist_type": "person",
+      "start_year": 1973,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%A0%D1%83%D1%81%D0%BB%D0%B0%D0%BD%D0%B0%20%D0%9B%D1%8B%D0%B6%D1%8B%D1%87%D0%BA%D0%BE%20%28cropped%29.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q129119",
+      "spotify_url": "https://open.spotify.com/artist/5nkB6GEbHINTSqmi5XMSoa",
+      "youtube_url": "https://www.youtube.com/channel/UCwswva9TnLYr46Lm2rdyhmw",
+      "genres": [
+        {
+          "id": "Q205049",
+          "name": "етнічна музика"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q11700058",
+          "name": "поп-фолк"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q14627544",
+      "name_uk": "Софія Тарасова",
+      "name_en": "Sofia Tarasova",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 2001,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%BE%D1%84%D0%B8%D1%8F%20%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D0%B0%20%D0%BD%D0%B0%20%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%B2%D0%BE%D0%BB%D0%BD%D0%B5%202016.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q14627544",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCBmuydtQm6j5_fPeH3o4sSg",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q15064790",
+      "name_uk": "Бурмака Марія Вікторівна",
+      "name_en": "Maria Burmaka",
+      "description": "українська авторка-виконавиця, музикантка, громадська активістка та благодійниця",
+      "artist_type": "person",
+      "start_year": 1970,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Maria%20Burmaka%202022%20%28facecrop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q15064790",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCeQ_iEktexC7Q7J8M1NyEMg",
+      "genres": [
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q15081052",
+      "name_uk": "Оля Полякова",
+      "name_en": "Olya Polyakova",
+      "description": "українська співачка, акторка, блогерка і телеведуча",
+      "artist_type": "person",
+      "start_year": 1979,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/2022%20Olya%20Polyakova%20-%20by%202eight%20-%20ZSC6310%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q15081052",
+      "spotify_url": "https://open.spotify.com/artist/5hpfP3fMcBFgQyTEpo19tl",
+      "youtube_url": "https://www.youtube.com/channel/UCBCPzW3C8Oqhlgdyaejnk1w",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q156951",
+      "name_uk": "Приходько Анастасія Костянтинівна",
+      "name_en": "Anastasiia Prykhodko",
+      "description": "українська співачка та громадська діячка",
+      "artist_type": "person",
+      "start_year": 1987,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Anastasia-Prikhodko.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q156951",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1574590",
+      "name_uk": "Злата Огнєвіч",
+      "name_en": "Zlata Ognevich",
+      "description": "українська співачка, колишня політикиня",
+      "artist_type": "person",
+      "start_year": 1986,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%97%D0%BB%D0%B0%D1%82%D0%B0%20%D0%9E%D0%B3%D0%BD%D1%94%D0%B2%D0%B8%D1%87.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1574590",
+      "spotify_url": "https://open.spotify.com/artist/187fS4swOKe4m6p5G0ciwF",
+      "youtube_url": "https://www.youtube.com/channel/UCfwnByYopupLxtjuQhU4flQ",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q16054135",
+      "name_uk": "ЯрмаК",
+      "name_en": "Yarmak",
+      "description": "український хіп-хоп-виконавець, командир роти безпілотних систем",
+      "artist_type": "person",
+      "start_year": 1991,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Yarmak-15031829.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q16054135",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UC2eT85Wb209TNxMYipniiMw",
+      "genres": [
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        },
+        {
+          "id": "Q6010",
+          "name": "реп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q16297491",
+      "name_uk": "Дмитрук Анастасія",
+      "name_en": "Anastasia Dmytruk",
+      "description": "українська поетеса",
+      "artist_type": "person",
+      "start_year": 1991,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Dmytruk-Anastasia-Mykolaivna-15056829.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q16297491",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q166661",
+      "name_uk": "Петрик Вікторія Ігорівна",
+      "name_en": "Victoria Petryk",
+      "description": "українська співачка та авторка пісень",
+      "artist_type": "person",
+      "start_year": 1997,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B5%D1%82%D1%80%D0%B8%D0%BA%2C%20%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%98%D0%B3%D0%BE%D1%80%D0%B5%D0%B2%D0%BD%D0%B0%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q166661",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q16698229",
+      "name_uk": "Надя Дорофєєва",
+      "name_en": "Nadya Dorofeeva",
+      "description": "українська співачка, блогерка й акторка",
+      "artist_type": "person",
+      "start_year": 1990,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Nadya%20Dorofeeva%202020%20Independence%20Day%20of%20Ukraine%201%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q16698229",
+      "spotify_url": "https://open.spotify.com/artist/7wl1m5vgWkCP3cqYVj2noM",
+      "youtube_url": "https://www.youtube.com/channel/UCVAbBvins_GOfl0O7FegnGQ",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q16700680",
+      "name_uk": "Калитко Катерина Олександрівна",
+      "name_en": "Kateryna Kalytko",
+      "description": "українська поетеса, письменниця, перекладачка",
+      "artist_type": "person",
+      "start_year": 1982,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kateryna%20Kalytko%202019%20%28crop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q16700680",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q16739217",
+      "name_uk": "Кульчинська Ольга Сергіївна",
+      "name_en": "Olga Kulchynska",
+      "description": "Ukrainian soprano opera singer",
+      "artist_type": "person",
+      "start_year": 1990,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q16739217",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q17371772",
+      "name_uk": "Герцег Еріка Миколаївна",
+      "name_en": "Erika Herceg",
+      "description": "українська співачка та модель",
+      "artist_type": "person",
+      "start_year": 1988,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Erika%20Herceg%20%282019%29%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q17371772",
+      "spotify_url": "https://open.spotify.com/artist/1HirmNxd5l8tlWJ9weMDqi",
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q18058656",
+      "name_uk": "Мозговий Олексій Борисович",
+      "name_en": "Aleksey Mozgovoy",
+      "description": "лідер проросійського угруповання на Донбасі",
+      "artist_type": "person",
+      "start_year": 1975,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Aleksey%20Mozgovoy%20discusses%20military%20matters%2C%20Aug%207%2C%202014.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q18058656",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCcjIf6nHl8ZHzfZ1TUAcYGw",
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1879459",
+      "name_uk": "Потапенко Олексій Андрійович",
+      "name_en": "Potap",
+      "description": "український продюсер, автор і виконавець пісень, режисер, сценарист, композитор, телеведучий",
+      "artist_type": "person",
+      "start_year": 1981,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Potap%20photoshooting%20at%20Laima%20Rendez%20Vous%20Jurmala%202017%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1879459",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCJUPlHtn_z4oqSmpqb_GE5Q",
+      "genres": [
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q850412",
+          "name": "сучасний ритм-енд-блюз"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q19694388",
+      "name_uk": "Тодоренко Регіна Петрівна",
+      "name_en": "Regina Todorenko",
+      "description": "російська телеведуча, колишня українська телеведуча, мандрівниця, співачка, акторка та авторка пісень",
+      "artist_type": "person",
+      "start_year": 1990,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Regina%20Todorenko%202019%20%28facecrop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q19694388",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCMGzQb90vac13gS2YovWqgA",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q1975227",
+      "name_uk": "Турбіна Ніка Георгіївна",
+      "name_en": "Nika Turbina",
+      "description": "Russian poet (1974–2002)",
+      "artist_type": "person",
+      "start_year": 1974,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Nika%20Turbina%20%28Russian%20poet%2C%20with%20book%20%22First%20Draft%2C%22%20New%20York%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1975227",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q19917936",
+      "name_uk": "Олеся Жураківська",
+      "name_en": "Olesia Zhurakivska",
+      "description": "українська акторка театру та кіно",
+      "artist_type": "person",
+      "start_year": 1973,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Olesia%20Zhurakivska%202024%20%28better%20crop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q19917936",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q20066240",
+      "name_uk": "Олег Винник",
+      "name_en": "Oleh Vynnyk",
+      "description": "український актор та співак",
+      "artist_type": "person",
+      "start_year": 1973,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Oleh%20Vynnyk%202018.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q20066240",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UC7846AB7Jppk_JDl27qRqzw",
+      "genres": [
+        {
+          "id": "Q2743",
+          "name": "мюзикл"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q20631407",
+      "name_uk": "Ольга Безсмертна",
+      "name_en": "Olha Bezsmertna",
+      "description": "українська оперна співачка, сопрано",
+      "artist_type": "person",
+      "start_year": 1983,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Olga%20Bezsmertna%202011%20%28facecrop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q20631407",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q209845",
+      "name_uk": "Гайтана",
+      "name_en": "Gaitana",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1979,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/GaitanaUkrainianface.png",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q209845",
+      "spotify_url": "https://open.spotify.com/artist/7o1vFulYnM0aDDFL3eH6tQ",
+      "youtube_url": "https://www.youtube.com/channel/UC8gtMlua3L1HiZvsTvoTSvQ",
+      "genres": [
+        {
+          "id": "Q8341",
+          "name": "джаз"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q11700058",
+          "name": "поп-фолк"
+        },
+        {
+          "id": "Q131272",
+          "name": "соул"
+        },
+        {
+          "id": "Q164444",
+          "name": "фанк"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q209926",
+      "name_uk": "Лобода Світлана Сергіївна",
+      "name_en": "Svetlana Loboda",
+      "description": "українська співачка й телеведуча",
+      "artist_type": "person",
+      "start_year": 1982,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Loboda%20%28Dec%202023%29%20%28cropped%29.png",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q209926",
+      "spotify_url": "https://open.spotify.com/artist/59oe7CAquFZ5mNjQ1efKPN",
+      "youtube_url": "https://www.youtube.com/channel/UCiU8w7NabK3xFgjxmHovjCg",
+      "genres": [
+        {
+          "id": "Q211756",
+          "name": "денспоп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q209987",
+      "name_uk": "Олена Тополя",
+      "name_en": "Olena Topolia",
+      "description": "українська співачка та композиторка",
+      "artist_type": "person",
+      "start_year": 1986,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Olena%20Topolya%202010%20%28facecrop%29.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q209987",
+      "spotify_url": "https://open.spotify.com/artist/4TgfvyEmBASJc82lfcHZjh",
+      "youtube_url": "https://www.youtube.com/channel/UC-sE7hozdZzofh4VnBKVX_g",
+      "genres": [
+        {
+          "id": "Q43343",
+          "name": "національна музика"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q850412",
+          "name": "сучасний ритм-енд-блюз"
+        },
+        {
+          "id": "Q1062400",
+          "name": "шансон"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q21573827",
+      "name_uk": "Юлія Саніна",
+      "name_en": "Julia Sanina",
+      "description": "українська співачка, авторка пісень, блогерка й телеведуча",
+      "artist_type": "person",
+      "start_year": 1990,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/M1%20Music%20Awards%202019%20166%20%D0%AE%D0%BB%D1%96%D1%8F%20%D0%A1%D0%B0%D0%BD%D1%96%D0%BD%D0%B0.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q21573827",
+      "spotify_url": "https://open.spotify.com/artist/0efc3nE6FItdogB7HGWlst",
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q21600244",
+      "name_uk": "Соловій Христина",
+      "name_en": "Khrystyna Soloviy",
+      "description": "українська співачка, авторка-виконавиця й музикантка",
+      "artist_type": "person",
+      "start_year": 1993,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BD%D0%B0%20%D0%A1%D0%BE%D0%BB%D0%BE%D0%B2%D1%96%D0%B9%20-%20Atlas%20Weekend%202016%20-%20230359.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q21600244",
+      "spotify_url": "https://open.spotify.com/artist/5lLVx3mMyUvZ9QKzM09CZa",
+      "youtube_url": "https://www.youtube.com/channel/UCa_yEJ39qu2yjF0vYbWTchw",
+      "genres": [
+        {
+          "id": "Q235858",
+          "name": "народна музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q21683191",
+      "name_uk": "Амеліна Вікторія Юріївна",
+      "name_en": "Victoria Amelina",
+      "description": "українська письменниця та громадська діячка",
+      "artist_type": "person",
+      "start_year": 1986,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Victoria%20Amelina%201022.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q21683191",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q229065",
+      "name_uk": "Тіна Кароль",
+      "name_en": "Tina Karol",
+      "description": "українська співачка, акторка, телеведуча, громадська діячка",
+      "artist_type": "person",
+      "start_year": 1985,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Fumio%20Kishida%20and%20Tina%20Karol%20at%20the%20Japanese%20Kantei%20in%202022%20%283%29%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q229065",
+      "spotify_url": "https://open.spotify.com/artist/0W3C8tSz8ERP2t37m6Ru6r",
+      "youtube_url": "https://www.youtube.com/channel/UCoV61u5mQvubNi7hJibZh5w",
+      "genres": [
+        {
+          "id": "Q874038",
+          "name": "Діп-хауз"
+        },
+        {
+          "id": "Q211756",
+          "name": "денспоп"
+        },
+        {
+          "id": "Q8341",
+          "name": "джаз"
+        },
+        {
+          "id": "Q188450",
+          "name": "електропоп"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q131272",
+          "name": "соул"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q22979243",
+      "name_uk": "Алексєєв Микита Володимирович",
+      "name_en": "Alekseev",
+      "description": "український співак",
+      "artist_type": "person",
+      "start_year": 1993,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Alekseev%202018.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q22979243",
+      "spotify_url": "https://open.spotify.com/artist/0PdkdCdzIY5XUTa7hE4S6S",
+      "youtube_url": "https://www.youtube.com/channel/UC9pTzGcdh_na7FTXE2bRLHg",
+      "genres": [
+        {
+          "id": "Q874038",
+          "name": "Діп-хауз"
+        },
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        },
+        {
+          "id": "Q211756",
+          "name": "денспоп"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q842324",
+          "name": "інді-поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2302686",
+      "name_uk": "Даша Астафʼєва",
+      "name_en": "Dasha Astafieva",
+      "description": "українська фотомодель, акторка та співачка",
+      "artist_type": "person",
+      "start_year": 1985,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/M1%20Music%20Awards%202019%20159%20%D0%90%D1%81%D1%82%D0%B0%D1%84%27%D1%94%D0%B2%D0%B0%20%D0%94%D0%B0%D1%80%D1%96%D1%8F%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2302686",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCdTS5A49k6JD-VJXi_GU9AQ",
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q231988",
+      "name_uk": "Міка Ньютон",
+      "name_en": "Mika Newton",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1986,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Mika%20Newton%202011%20%28crop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q231988",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q373342",
+          "name": "популярна музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2329850",
+      "name_uk": "Віра Брежнєва",
+      "name_en": "Vera Brezhneva",
+      "description": "українська співачка, акторка й телеведуча",
+      "artist_type": "person",
+      "start_year": 1982,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%92%D0%B5%D1%80%D0%B0%20%D0%91%D1%80%D0%B5%D0%B6%D0%BD%D0%B5%D0%B2%D0%B0.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2329850",
+      "spotify_url": "https://open.spotify.com/artist/3QN85cB7Cehb4ZLjpRW2Jt",
+      "youtube_url": "https://www.youtube.com/channel/UCEYVDdF97TIJ1BHMq2RNkKw",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2350283",
+      "name_uk": "Сєдокова Анна Володимирівна",
+      "name_en": "Anna Sedokova",
+      "description": "українська співачка та телеведуча",
+      "artist_type": "person",
+      "start_year": 1982,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Anna%20Sedokova%202016%20%28facecrop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2350283",
+      "spotify_url": "https://open.spotify.com/artist/1WkeZdCvlvnY6Ntl7sqzbg",
+      "youtube_url": "https://www.youtube.com/channel/UCNdJC9uy9JlJpsKw9Y8Vl4w",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2359458",
+      "name_uk": "Гросу Аліна Михайлівна",
+      "name_en": "Alina Grosu",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1995,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Alina%20Grosu%209152.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2359458",
+      "spotify_url": "https://open.spotify.com/artist/5YBtvuzpXoIj041GzSIeHk",
+      "youtube_url": "https://www.youtube.com/channel/UCmgQxvEbrnSBLYmb5e32_oA",
+      "genres": [
+        {
+          "id": "Q837837",
+          "name": "Пауер-поп"
+        },
+        {
+          "id": "Q2472420",
+          "name": "естрада"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q1298934",
+          "name": "синтпоп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q23656293",
+      "name_uk": "Пивоваров Артем Володимирович",
+      "name_en": "Artem Pyvovarov",
+      "description": "український співак",
+      "artist_type": "person",
+      "start_year": 1991,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Artem%20Pyvovarov%2C%20UNICEF%20Youth%20Awards%20Ceremony%20%28cropped%2002%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q23656293",
+      "spotify_url": "https://open.spotify.com/artist/11sIz9STeD6yVSuBaD8nMW",
+      "youtube_url": "https://www.youtube.com/channel/UC0epWL_U_mWZtLJnWmutUyw",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q237081",
+      "name_uk": "Ані Лорак",
+      "name_en": "Ani Lorak",
+      "description": "російська співачка, акторка та підприємиця українського походження",
+      "artist_type": "person",
+      "start_year": 1978,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%90%D0%BD%D0%B8%20%D0%9B%D0%BE%D1%80%D0%B0%D0%BA%20%283%29%20%28%D0%91%D0%B5%D0%BB%D1%8B%D0%B5%20%D0%BD%D0%BE%D1%87%D0%B8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D0%B0%20%E2%80%94%202021.%20%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9%20%D0%9B%D0%B5%D0%BF%D1%81%20%D1%81%D0%BE%D0%B1%D0%B8%D1%80%D0%B0%D0%B5%D1%82%20%D0%B4%D1%80%D1%83%D0%B7%D0%B5%D0%B9%29%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q237081",
+      "spotify_url": "https://open.spotify.com/artist/1J9vlx72A2T3kbRckBu04o",
+      "youtube_url": "https://www.youtube.com/channel/UCHODSaT4dkvm7NGTGki6dbA",
+      "genres": [
+        {
+          "id": "Q874038",
+          "name": "Діп-хауз"
+        },
+        {
+          "id": "Q211756",
+          "name": "денспоп"
+        },
+        {
+          "id": "Q9778",
+          "name": "електронна музика"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q1298934",
+          "name": "синтпоп"
+        },
+        {
+          "id": "Q131272",
+          "name": "соул"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q23715847",
+      "name_uk": "Наталі Берн",
+      "name_en": "Natalie Burn",
+      "description": "українська акторка, модель, сценаристка та продюсерка",
+      "artist_type": "person",
+      "start_year": 2000,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Natalie%20Burn%20May%202015%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q23715847",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2391534",
+      "name_uk": "Мейхер Надія Олександрівна",
+      "name_en": "Nadia Meiher",
+      "description": "українська співачка, акторка, поетеса, телеведуча, дизайнерка та модельєрка",
+      "artist_type": "person",
+      "start_year": 1982,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Nadia%20Meikher%202016%20%28facecrop%29.jpeg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2391534",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q1344",
+          "name": "опера"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q24008612",
+      "name_uk": "Капітал бра",
+      "name_en": "Capital Bra",
+      "description": "німецький репер",
+      "artist_type": "person",
+      "start_year": 1994,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Capital%20Bra%20bei%20GERMANIA%20%28Video-Format%20von%20funk%29.png",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q24008612",
+      "spotify_url": "https://open.spotify.com/artist/4WZGDpNwrC0vNQyl9QzF7d",
+      "youtube_url": "https://www.youtube.com/channel/UCeJIbOka3ZF8TSWT_-kHmSA",
+      "genres": [
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2418536",
+      "name_uk": "Анна Багряна",
+      "name_en": "Anna Bahri︠a︡na",
+      "description": "українська поетеса, прозаїкиня, драматургиня й перекладачка",
+      "artist_type": "person",
+      "start_year": 1981,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Anna%20Bagryana%202021%20%28facecrop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2418536",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2504592",
+      "name_uk": "Вінницька Ольга Вікторівна",
+      "name_en": "Alena Vinnitskaya",
+      "description": "українська співачка, авторка пісень, телеведуча та композиторка",
+      "artist_type": "person",
+      "start_year": 1974,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%90%D0%BB%D0%B5%D0%BD%D0%B0-%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F%206%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2504592",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCVifXgfkd3NS11lQp1s1sxQ",
+      "genres": [
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q25050824",
+      "name_uk": "Сліпак Василь Ярославович",
+      "name_en": "Vasyl Slipak",
+      "description": "український оперний співак, соліст Паризької національної опери, волонтер, учасник бойових дій під час війни на Сході України у складі добровольчих формувань, позивний «Міф»",
+      "artist_type": "person",
+      "start_year": 1974,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Wassyl%20Slipak%2024%20ao%C3%BBt%202014.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q25050824",
+      "spotify_url": "https://open.spotify.com/artist/5EBWBSKaEnN6Qr8QWd3r0K",
+      "youtube_url": "https://www.youtube.com/channel/UCa0rYqGGi2yKS3IoylC3Tdw",
+      "genres": [
+        {
+          "id": "Q9730",
+          "name": "класична музика"
+        },
+        {
+          "id": "Q1344",
+          "name": "опера"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q25442068",
+      "name_uk": "Melovin",
+      "name_en": "Mélovin",
+      "description": "український співак",
+      "artist_type": "person",
+      "start_year": 1997,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Melovin%20photoset%2010.11.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q25442068",
+      "spotify_url": "https://open.spotify.com/artist/1F9DD5i1iYHvnM7Yf7ERyB",
+      "youtube_url": "https://www.youtube.com/channel/UC_XeTPb-8McRckJ4qVM5Rdg",
+      "genres": [
+        {
+          "id": "Q1298934",
+          "name": "синтпоп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2622781",
+      "name_uk": "Святослав Вакарчук",
+      "name_en": "Sviatoslav Vakarchuk",
+      "description": "український співак та пісняр, фізик, політик, громадський діяч",
+      "artist_type": "person",
+      "start_year": 1975,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Svyatoslav%20Vakarchuk%20Israel%202023.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2622781",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCrZThgsH2L80kFY_2ritv5w",
+      "genres": [
+        {
+          "id": "Q11366",
+          "name": "альтернативний рок"
+        },
+        {
+          "id": "Q217467",
+          "name": "артрок"
+        },
+        {
+          "id": "Q8341",
+          "name": "джаз"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        },
+        {
+          "id": "Q183504",
+          "name": "інді-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2662517",
+      "name_uk": "Джамала",
+      "name_en": "Jamala",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1983,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Jamalatanieczgwiazdami.png",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2662517",
+      "spotify_url": "https://open.spotify.com/artist/4EXfia20rgVLyubQiYtOIC",
+      "youtube_url": "https://www.youtube.com/channel/UCopvC_2w-7rRPEV_EWQB-lw",
+      "genres": [
+        {
+          "id": "Q8341",
+          "name": "джаз"
+        },
+        {
+          "id": "Q217597",
+          "name": "електро"
+        },
+        {
+          "id": "Q43343",
+          "name": "національна музика"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q131272",
+          "name": "соул"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2662849",
+      "name_uk": "Ірина Білик",
+      "name_en": "Iryna Bilyk",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1970,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Iryna%20Bilyk22.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2662849",
+      "spotify_url": "https://open.spotify.com/artist/27sm0uEhyGG6PIjd5xc3H9",
+      "youtube_url": "https://www.youtube.com/channel/UCzYZgxpU9CR58IRVMSBPptw",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q270089",
+      "name_uk": "Ганна Яблонська",
+      "name_en": "Hanna Yablonska",
+      "description": "українська письменниця",
+      "artist_type": "person",
+      "start_year": 1981,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q270089",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q275875",
+      "name_uk": "Андрій Данилко",
+      "name_en": "Verka Serduchka",
+      "description": "український актор, співак, сценарист, телеведучий, композитор",
+      "artist_type": "person",
+      "start_year": 1973,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D0%B9%20%D0%94%D0%B0%D0%BD%D0%B8%D0%BB%D0%BA%D0%BE%202021.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q275875",
+      "spotify_url": "https://open.spotify.com/artist/7uH6CJjqK71HlHW4WHNAJg",
+      "youtube_url": "https://www.youtube.com/channel/UCSX30LUjMnLx2KSc9rMcxKA",
+      "genres": [
+        {
+          "id": "Q5151495",
+          "name": "comedy music"
+        },
+        {
+          "id": "Q58339",
+          "name": "диско"
+        },
+        {
+          "id": "Q11700058",
+          "name": "поп-фолк"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q277168",
+      "name_uk": "Петрик Анастасія Ігорівна",
+      "name_en": "Anastasiya Petryk",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 2002,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Nastya%20Petrik%20JESC%202013%20rehearsal%202013.11.26.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q277168",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q2781934",
+      "name_uk": "Камалія",
+      "name_en": "Kamaliya",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1977,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kamaliya1.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2781934",
+      "spotify_url": "https://open.spotify.com/artist/0zW1Z8MPCF2XkoCLjH5JzE",
+      "youtube_url": "https://www.youtube.com/channel/UC9iK5Nvi59GoNS_5KCUd9pg",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q1298934",
+          "name": "синтпоп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q28826885",
+      "name_uk": "Tayanna",
+      "name_en": "Tayanna",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1984,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Tayanna.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q28826885",
+      "spotify_url": "https://open.spotify.com/artist/68MDO1qEjlimdYonMiWEZt",
+      "youtube_url": "https://www.youtube.com/channel/UC2OnDyq3gmnRQ8hrc6ej1Xw",
+      "genres": [
+        {
+          "id": "Q9778",
+          "name": "електронна музика"
+        },
+        {
+          "id": "Q217191",
+          "name": "софт-рок"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q289212",
+      "name_uk": "Каменських Анастасія Олексіївна",
+      "name_en": "Nastya Kamenskikh",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1987,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Nastya%20Kamenskyh%202017%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q289212",
+      "spotify_url": "https://open.spotify.com/artist/3YkZxu7ClLCOqRJG7CxlK7",
+      "youtube_url": "https://www.youtube.com/channel/UCOg_PC6oTlAfcn3Wnv1QG5Q",
+      "genres": [
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        },
+        {
+          "id": "Q188450",
+          "name": "електропоп"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q850412",
+          "name": "сучасний ритм-енд-блюз"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q3056591",
+      "name_uk": "MamaRika",
+      "name_en": "MamaRika",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1989,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/M1%20Music%20Awards%202019%20052%20MamaRika.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q3056591",
+      "spotify_url": "https://open.spotify.com/artist/2z7s33V83m51jGhptAoCHE",
+      "youtube_url": "https://www.youtube.com/channel/UC5A0PgkH6vndkzWBBUnRuxw",
+      "genres": [
+        {
+          "id": "Q438503",
+          "name": "альтернативний хіп-хоп"
+        },
+        {
+          "id": "Q8341",
+          "name": "джаз"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q3350429",
+      "name_uk": "Ольга Романовська",
+      "name_en": "Olga Romanovskaya",
+      "description": "українська співачка, ведуча, дизайнерка, російська журналістка",
+      "artist_type": "person",
+      "start_year": 1986,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9E%D0%BB%D1%8C%D0%B3%D0%B0%20%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q3350429",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q336143",
+      "name_uk": "Олег Олександрович Прудіус",
+      "name_en": "Vladimir Kozlov",
+      "description": "Ukrainian-American professional wrestler and actor",
+      "artist_type": "person",
+      "start_year": 1979,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Vladimir%20Kozlov%202010%20Tribute%20to%20the%20Troops.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q336143",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4098935",
+      "name_uk": "Булітко Вікторія Сергіївна",
+      "name_en": "Victoria Bulitko",
+      "description": "українська акторка, співачка",
+      "artist_type": "person",
+      "start_year": 1983,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Victoria%20Bulitko%202025%20%28facecrop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4098935",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UClnh9wvuE5HgU0PABUMGGGQ",
+      "genres": [
+        {
+          "id": "Q2472420",
+          "name": "естрада"
+        },
+        {
+          "id": "Q11635",
+          "name": "театр"
+        },
+        {
+          "id": "Q289",
+          "name": "телебачення"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4100623",
+      "name_uk": "Бучинська Наталія Любомирівна",
+      "name_en": "Natalia Buchynska",
+      "description": "українська співачка, режисерка, юристка",
+      "artist_type": "person",
+      "start_year": 1977,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Natalia%20Buchynska%202016%20%28facecrop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4100623",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCk-d9KxgRGGVrRBCIeCe48w",
+      "genres": [
+        {
+          "id": "Q205049",
+          "name": "етнічна музика"
+        },
+        {
+          "id": "Q235858",
+          "name": "народна музика"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4112436",
+      "name_uk": "Ірма Вітовська",
+      "name_en": "Irma Vitovska",
+      "description": "українська акторка театру та кіно, продюсерка, громадська діячка",
+      "artist_type": "person",
+      "start_year": 1974,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%86%D1%80%D0%BC%D0%B0%20%D0%92%D1%96%D1%82%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%20%D0%B7%20%D0%BC%D0%BE%D1%82%D0%B0%D0%BD%D0%BA%D0%BE%D1%8E%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4112436",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q41272",
+      "name_uk": "Макс Барських",
+      "name_en": "Max Barskih",
+      "description": "український співак та композитор",
+      "artist_type": "person",
+      "start_year": 1990,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q41272",
+      "spotify_url": "https://open.spotify.com/artist/5zXGVPJHUzQPUXKA7AlTi5",
+      "youtube_url": "https://www.youtube.com/channel/UCSZP_I8E-_pRFVm90S0Zy6Q",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4166662",
+      "name_uk": "Іван Дорн",
+      "name_en": "Ivan Dorn",
+      "description": "український співак і телеведучий",
+      "artist_type": "person",
+      "start_year": 1988,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/POS19%20DAY2-243%20%2848486739366%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4166662",
+      "spotify_url": "https://open.spotify.com/artist/1VZ1TofaV3kj90QJSdg6NG",
+      "youtube_url": "https://www.youtube.com/channel/UC8P_9Cei0kWKtIJH58YoqkA",
+      "genres": [
+        {
+          "id": "Q20502",
+          "name": "гауз"
+        },
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        },
+        {
+          "id": "Q8341",
+          "name": "джаз"
+        },
+        {
+          "id": "Q58339",
+          "name": "диско"
+        },
+        {
+          "id": "Q268253",
+          "name": "неосоул"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q164444",
+          "name": "фанк"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4174878",
+      "name_uk": "Єлизаров Михайло Юрійович",
+      "name_en": "Mikhail Elizarov",
+      "description": "російський письменник",
+      "artist_type": "person",
+      "start_year": 1973,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Mihail%20Elizarov.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4174878",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4217574",
+      "name_uk": "Катя Chilly",
+      "name_en": "Katya Chilly",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1978,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4217574",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q20502",
+          "name": "гауз"
+        },
+        {
+          "id": "Q9778",
+          "name": "електронна музика"
+        },
+        {
+          "id": "Q235858",
+          "name": "народна музика"
+        },
+        {
+          "id": "Q43343",
+          "name": "національна музика"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        },
+        {
+          "id": "Q170435",
+          "name": "транс"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4222735",
+      "name_uk": "Кіяновська Маріанна Ярославівна",
+      "name_en": "Marianna Kiyanovska",
+      "description": "українська письменниця, перекладачка, літкритикиня та літературознавиця",
+      "artist_type": "person",
+      "start_year": 1973,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Marianna%20Kijanovska%20%282026%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4222735",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4237277",
+      "name_uk": "Олена Кравець",
+      "name_en": "Olena Kravets",
+      "description": "українська акторка та гумористка",
+      "artist_type": "person",
+      "start_year": 1977,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/In%20the%20Cherkasy%20region%2C%20the%20President%20took%20part%20in%20the%20festivities%20on%20the%20occasion%20of%20the%20Day%20of%20the%20National%20Flag.%20%2851716681059%29%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4237277",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q54969",
+          "name": "КВК"
+        },
+        {
+          "id": "Q60548032",
+          "name": "гумор"
+        },
+        {
+          "id": "Q590870",
+          "name": "кінематограф"
+        },
+        {
+          "id": "Q289",
+          "name": "телебачення"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4253098",
+      "name_uk": "Лазуткін Дмитро Михайлович",
+      "name_en": "Dmytro Lazutkin",
+      "description": "український поет, журналіст",
+      "artist_type": "person",
+      "start_year": 1978,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Dmytro%20Lazutkin%20JRS%205984-Enhanced-NR.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4253098",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UC6wqyYuvEm8X2cs-fZ5nvpA",
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4299108",
+      "name_uk": "Могилевська Наталія Олексіївна",
+      "name_en": "Natalya Mohylevska",
+      "description": "українська телеведуча, співачка та продюсерка",
+      "artist_type": "person",
+      "start_year": 1975,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Natalia%20Mohylevska%202017%20%28facecrop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4299108",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCid1-0ysWQJlU34keP7JXuw",
+      "genres": [
+        {
+          "id": "Q8341",
+          "name": "джаз"
+        },
+        {
+          "id": "Q2472420",
+          "name": "естрада"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4379252",
+      "name_uk": "Притула Сергій Дмитрович",
+      "name_en": "Serhiy Prytula",
+      "description": "український шоумен, актор та політик",
+      "artist_type": "person",
+      "start_year": 1981,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Serhiy%20Prytula.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4379252",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCR2Pbg310vXj1_9o3Q2RaMw",
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q438402",
+      "name_uk": "Маша Єфросиніна",
+      "name_en": "Masha Efrosynina",
+      "description": "українська телеведуча, журналістка, громадська діячка, акторка",
+      "artist_type": "person",
+      "start_year": 1979,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Maria%20Efrosinina.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q438402",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCU6V_LEFT5orWJ8FoRqdjbg",
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4391645",
+      "name_uk": "Ревва Олександр Володимирович",
+      "name_en": "Aleksandr Revva",
+      "description": "російський актор, шоумен, співак і телеведучий",
+      "artist_type": "person",
+      "start_year": 1974,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%90%D1%80%D1%82%D1%83%D1%80%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B6%D0%BA%D0%BE%D0%B2%20%28%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%20%D0%A0%D0%B5%D0%B2%D0%B2%D0%B0%29%20%282%29%20%28%D0%91%D0%B5%D0%BB%D1%8B%D0%B5%20%D0%BD%D0%BE%D1%87%D0%B8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D0%B0%20%E2%80%94%202021.%20%D0%A5%D0%B8%D1%82%20%D0%BD%D0%B0%20%D0%B2%D1%81%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B0%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4391645",
+      "spotify_url": "https://open.spotify.com/artist/3nBhPSHZ3oWyLLG3eBBqQY",
+      "youtube_url": "https://www.youtube.com/channel/UCIx07h6JQsBGGZ3iyHqKgGA",
+      "genres": [
+        {
+          "id": "Q851213",
+          "name": "EDM"
+        },
+        {
+          "id": "Q378495",
+          "name": "Російська попмузика"
+        },
+        {
+          "id": "Q40831",
+          "name": "комедія"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        },
+        {
+          "id": "Q164444",
+          "name": "фанк"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4397461",
+      "name_uk": "Романюта Едуард Едуардович",
+      "name_en": "Eduard Romanyuta",
+      "description": "український співак",
+      "artist_type": "person",
+      "start_year": 1992,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%AD%D0%B4%D1%83%D0%B0%D1%80%D0%B4%20%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD%D1%8E%D1%82%D0%B0.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4397461",
+      "spotify_url": "https://open.spotify.com/artist/6vj36dINepZ0nmpbZhak5c",
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q211756",
+          "name": "денспоп"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q45981",
+          "name": "ритм-енд-блюз"
+        },
+        {
+          "id": "Q131272",
+          "name": "соул"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4498294",
+      "name_uk": "Хливнюк Андрій Володимирович",
+      "name_en": "Andrii Khlyvniuk",
+      "description": "український співак, лідер гурту Boombox",
+      "artist_type": "person",
+      "start_year": 1979,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/BoomBox%20Toronto2015%204.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4498294",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        },
+        {
+          "id": "Q8341",
+          "name": "джаз"
+        },
+        {
+          "id": "Q484641",
+          "name": "попрок"
+        },
+        {
+          "id": "Q164444",
+          "name": "фанк"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4525785",
+      "name_uk": "Яремчук Марія Назарівна",
+      "name_en": "Mariya Yaremchuk",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1993,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Mariya%20Yaremchuk%2C%20ESC2014%20Meet%20%26%20Greet%2001%20%28crop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4525785",
+      "spotify_url": "https://open.spotify.com/artist/2GcuaSJbRVxaoxtwlob8G5",
+      "youtube_url": "https://www.youtube.com/channel/UCWJP4AjhDrGWdKRHnb1RP2g",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        },
+        {
+          "id": "Q11700058",
+          "name": "поп-фолк"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4527981",
+      "name_uk": "Дмитро Шуров",
+      "name_en": "Dmytro Shurov",
+      "description": "український автор-виконавець, композитор, засновник і соліст проєкту Pianoбой",
+      "artist_type": "person",
+      "start_year": 1981,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%A8%D1%83%D1%80%D0%BE%D0%B2.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4527981",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q4536696",
+      "name_uk": "Якимчук Любов Василівна",
+      "name_en": "Lyuba Yakimchuk",
+      "description": "українська письменниця",
+      "artist_type": "person",
+      "start_year": 1985,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Ljuba%20Jakymtjuk%20Bokm%C3%A4ssan%202023.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4536696",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q455606",
+      "name_uk": "Азарова Світлана Анатоліївна",
+      "name_en": "Svitlana Azarova",
+      "description": "українська, нідерландська композиторка",
+      "artist_type": "person",
+      "start_year": 1976,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Svitlana-Azarova-aan-het-ij-2009-d.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q455606",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q9730",
+          "name": "класична музика"
+        },
+        {
+          "id": "Q3328774",
+          "name": "симфонічна музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q458209",
+      "name_uk": "Жадан Сергій Вікторович",
+      "name_en": "Serhiy Zhadan",
+      "description": "український поет та прозаїк, співак, есеїст, перекладач, громадський активіст",
+      "artist_type": "person",
+      "start_year": 1974,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Serhiy%20Zhadan%20Toronto%202019.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q458209",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q47489230",
+      "name_uk": "Стерненко Сергій В'ячеславович",
+      "name_en": "Serhii Sternenko",
+      "description": "український громадський діяч, волонтер і відеоблогер",
+      "artist_type": "person",
+      "start_year": 1995,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D0%BD%D0%BA%D0%BE%20%D0%A1%D0%B5%D1%80%D0%B3%D1%96%D0%B9%20%D0%92%27%D1%8F%D1%87%D0%B5%D1%81%D0%BB%D0%B0%D0%B2%D0%BE%D0%B2%D0%B8%D1%87%202020.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q47489230",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UC5HBd4l_kpba5b0O1pK-Bfg",
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q521717",
+      "name_uk": "Мар'яна Садовська",
+      "name_en": "Mariana Sadovska",
+      "description": "українська музикантка, композиторка, співачка та акторка",
+      "artist_type": "person",
+      "start_year": 1972,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kundgebung%20am%204.%20Jahrestag%20des%20russischen%20Gro%C3%9Fangriffs%20auf%20die%20Ukraine%20in%20K%C3%B6ln-9098.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q521717",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q535444",
+      "name_uk": "Євген Гудзь",
+      "name_en": "Eugene Hütz",
+      "description": "Українсько-американський співак, композитор, диск-жокей, актор",
+      "artist_type": "person",
+      "start_year": 1972,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Eugene%20H%C3%BCtz%202023.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q535444",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q2715283",
+          "name": "Циганський панк"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q540915",
+      "name_uk": "Пономарьов Олександр Валерійович",
+      "name_en": "Oleksandr Ponomariov",
+      "description": "український співак",
+      "artist_type": "person",
+      "start_year": 1973,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Ponomarev%20oleksandr%202017%20nazipov.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q540915",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCkeuPTM8IoUn2ux90rpf3Hw",
+      "genres": [
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q550858",
+      "name_uk": "Карпа Ірена Ігорівна",
+      "name_en": "Irena Karpa",
+      "description": "українська письменниця, журналістка, акторка, співачка та телеведуча",
+      "artist_type": "person",
+      "start_year": 1980,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%86%D1%80%D0%B5%D0%BD%D0%B0%20%D0%9A%D0%B0%D1%80%D0%BF%D0%B0.%20%D0%9B%D0%B8%D0%BF%D0%B5%D0%BD%D1%8C%202015%2010%20%28cropped%29.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q550858",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/channel/UCz1W-KZgIBZHVQvHjqveZPQ",
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q55108431",
+      "name_uk": "Аліна Паш",
+      "name_en": "Alina Pash",
+      "description": "українська співачка",
+      "artist_type": "person",
+      "start_year": 1993,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Alina%20Pash%20at%20Atlas%20Weekend%202019%20%28cropped%29.jpeg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q55108431",
+      "spotify_url": "https://open.spotify.com/artist/14tyrcBGUSw0eBiSTjavPS",
+      "youtube_url": "https://www.youtube.com/channel/UC8Eb29a-zkweWmjTfCoQ2eA",
+      "genres": [
+        {
+          "id": "Q11401",
+          "name": "гіпгоп"
+        },
+        {
+          "id": "Q205049",
+          "name": "етнічна музика"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q56310176",
+      "name_uk": "MARUV",
+      "name_en": "Maruv",
+      "description": "українська співачка, авторка пісень, композиторка та продюсерка",
+      "artist_type": "person",
+      "start_year": 1991,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Anna%20Korsun%20at%20Compas.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q56310176",
+      "spotify_url": "https://open.spotify.com/artist/44T03OWDUjwDgg4IYgFCWi",
+      "youtube_url": "https://www.youtube.com/channel/UCG2hAzA2G40on_viIrPVz9g",
+      "genres": [
+        {
+          "id": "Q851213",
+          "name": "EDM"
+        },
+        {
+          "id": "Q37073",
+          "name": "поп"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q58851557",
+      "name_uk": "Кузнєцов Олександр Олександрович",
+      "name_en": "Alexander Kuznetsov",
+      "description": "Russian actor (born 1992)",
+      "artist_type": "person",
+      "start_year": 1992,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%20%D0%9A%D1%83%D0%B7%D0%BD%D0%B5%D1%86%D0%BE%D0%B2%20%D0%BD%D0%B0%2069%20%D0%91%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%BC%20%D0%BA%D0%B8%D0%BD%D0%BE%D1%84%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D0%B5%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q58851557",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q6415231",
+      "name_uk": "Карабиць Кирило Іванович",
+      "name_en": "Kirill Karabits",
+      "description": "Ukrainian conductor",
+      "artist_type": "person",
+      "start_year": 1976,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kirill%20Karabits.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q6415231",
+      "spotify_url": "https://open.spotify.com/artist/4R3RDYAysOS0Joet8zTxc7",
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q9730",
+          "name": "класична музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q65209556",
+      "name_uk": "Вишебаба Павло Олександрович",
+      "name_en": "Pavlo Vyshebaba",
+      "description": "український еко-активіст і музикант",
+      "artist_type": "person",
+      "start_year": 1986,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9A%D0%B8%D1%97%D0%B2%20-%20%D0%A0%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D1%96%D1%8F%20%D0%93%D1%96%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20-%20%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%20%D0%92%D0%B8%D1%88%D0%B5%D0%B1%D0%B0%D0%B1%D0%B0%20-%2013124167.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q65209556",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q6522077",
+      "name_uk": "Бєлкіна Олена Юріївна",
+      "name_en": "Lena Belkina",
+      "description": "українська оперна співачка (меццо-сопрано)",
+      "artist_type": "person",
+      "start_year": 1987,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q6522077",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q698094",
+      "name_uk": "Лаєвська Ганна Сергіївна",
+      "name_en": "Ana Layevska",
+      "description": "українська акторка",
+      "artist_type": "person",
+      "start_year": 1982,
+      "image_url": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q698094",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q7701243",
+      "name_uk": "Крук Галина Григорівна",
+      "name_en": "Halyna Kruk",
+      "description": "українська поетеса та перекладачка",
+      "artist_type": "person",
+      "start_year": 1974,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Halyna%20Kruk%202015%20%28facecrop%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q7701243",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q82262",
+      "name_uk": "Чубай Тарас Григорович",
+      "name_en": "Taras Chubay",
+      "description": "український співак",
+      "artist_type": "person",
+      "start_year": 1970,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%A2%D0%B0%D1%80%D0%B0%D1%81%20%D0%A7%D1%83%D0%B1%D0%B0%D0%B9%20%28%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%2C%2005.11.2011%29.JPG",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q82262",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q4056436",
+          "name": "авторська пісня"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q85992998",
+      "name_uk": "Катерина Павленко",
+      "name_en": "Kateryna Pavlenko",
+      "description": "українська співачка, авторка пісень, композиторка, музикантка та фольклористка",
+      "artist_type": "person",
+      "start_year": 1988,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kateryna%20Pavlenko%2C%20UNICEF%20Youth%20Awards%20Ceremony%20%28cropped%2001%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q85992998",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "Q205049",
+          "name": "етнічна музика"
+        },
+        {
+          "id": "Q11399",
+          "name": "рок-музика"
+        },
+        {
+          "id": "Q205560",
+          "name": "тріп-хоп"
+        },
+        {
+          "id": "Q186472",
+          "name": "фольк-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q91313507",
+      "name_uk": "Каролина Проценко",
+      "name_en": "Karolina Protsenko",
+      "description": "українсько-американська скрипалька",
+      "artist_type": "person",
+      "start_year": 2008,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Karolina%20Protsenko%20Violinist%20%2844410558032%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q91313507",
+      "spotify_url": "https://open.spotify.com/artist/5eI2DHAYU0gMk92kZKv9zA",
+      "youtube_url": "https://www.youtube.com/channel/UC1KsyVFMu6Aq5x235IoalZQ",
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q9317341",
+      "name_uk": "Лариса Бакурова",
+      "name_en": "Larisa Bakurova",
+      "description": "українсько-тайванська акторка та модель",
+      "artist_type": "person",
+      "start_year": 1985,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/Larisa%20Bakurova%20%28cropped%29.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q9317341",
+      "spotify_url": null,
+      "youtube_url": null,
+      "genres": [
+        {
+          "id": "local:українська-музика",
+          "name": "українська музика"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    },
+    {
+      "qid": "Q114527926",
+      "name_uk": "SadSvit",
+      "name_en": "SadSvit",
+      "description": "український інді-поп виконавець",
+      "artist_type": "person",
+      "start_year": 2004,
+      "image_url": "http://commons.wikimedia.org/wiki/Special:FilePath/SadSvit%2C%202022.jpg",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q114527926",
+      "spotify_url": "https://open.spotify.com/artist/2ojY7fXJxZQhg8Rx5e8h9G",
+      "youtube_url": "https://www.youtube.com/channel/UCClKCwSrVu5hwP5ZgzvgLhQ",
+      "genres": [
+        {
+          "id": "local:постпанк",
+          "name": "постпанк"
+        },
+        {
+          "id": "local:інді-рок",
+          "name": "інді-рок"
+        }
+      ],
+      "retrieved_at": "2026-11-02T19:58:49.742252+00:00"
+    }
+  ]
+}
